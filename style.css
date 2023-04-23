@@ -26,6 +26,17 @@ body {
   transition: border-bottom 0.2s ease-in-out; /* Change the duration and timing function to your preference */
 }
 
+.custom-border {
+  border-color: #0a2647;
+  color: #0a2647;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
 /* start: Gallery Section */
 .gallery-section {
   overflow: hidden;
