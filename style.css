@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--primary);
   width: 95%;
   transition: border-bottom 0.2s ease-in-out; /* Change the duration and timing function to your preference */
 }
