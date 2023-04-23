@@ -70,7 +70,8 @@ body {
   font-weight: 700;
   margin-bottom: 32px;
 }
-.gallery-content p {
+.gallery-content p,
+h5 {
   color: #fff;
   line-height: 1.5;
 }
