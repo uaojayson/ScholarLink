@@ -14,7 +14,7 @@ https://www.finduniversity.ph/_resources/business/46105/university-of-the-philip
 https://militaryschooldirectory.com/wp-content/uploads/1970/01/PMMA.png *//250x250
 https://www.edarabia.com/wp-content/uploads/2013/08/ramon-magsaysay-technological-university-logo-phillipines.jpg  *//350 x350
 https://edukasyon-production.s3-ap-southeast-1.amazonaws.com/uploads/school/avatar/831/don-honorario-ventura-state-university.png?X-Amz-Expires=600&amp;X-Amz-Date=20190728T174354Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJ74A7X7ASQYTD2HA/20190728/ap-southeast-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=b92a28f49db5d9ece702447bb426e7ba5bd4ea4a615bab51c424fdb165ae4f79   *// 386x386
-https://edukasyon-production.s3.amazonaws.com/uploads/school/avatar/847/gordon-college-logo.jpg  *// 960 x 960
+https://edukasyon-production.s3.amazonaws.com/uploads/school/avatar/847/gordon-college-logo.jpg  */// 960 x 960  
 
 
 
