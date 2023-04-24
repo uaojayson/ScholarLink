@@ -44,6 +44,11 @@ body {
   color: #fff;
 }
 
+.btn.active {
+  background-color: #ccc;
+  color: #fff;
+}
+
 /* start: Gallery Section */
 .gallery-section {
   overflow: hidden;
@@ -86,11 +91,11 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: right;
   z-index: 1;
 }
 
 .hero-tag {
-  text-align: center;
   padding: 10% 2%;
   border-radius: 5px;
 }
