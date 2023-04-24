@@ -9,6 +9,10 @@
 :root {
   --primary: #0a2647;
   --secondary: #ffb100;
+  --dark-1: #161819;
+  --dark-2: #252728;
+  --grey: #aaa;
+  --light: #fff;
 }
 body {
   font-family: "Urbanist", sans-serif;
@@ -19,6 +23,8 @@ body {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+/* Start: Navigation Bar */
 
 .nav-link:hover {
   border-bottom: 2px solid var(--secondary);
@@ -52,7 +58,9 @@ body {
   color: var(--primary);
 }
 
-/* start: Gallery Section */
+/* End: Navigation Bar */
+
+/* Start: Hero Gallery Section */
 .gallery-section {
   overflow: hidden;
   position: relative;
@@ -229,4 +237,126 @@ h5 {
     height: 500px;
   }
 }
-/* end: Breakpoints */
+/* End: Breakpoints/ Hero Gallery Section */
+
+/* Start: What We Provide Section */
+
+.what-we-provide {
+  max-width: 991px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 48px auto;
+}
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  color: var(--light);
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-gap: 16px;
+}
+.card {
+  padding: 24px;
+  border-radius: 12px;
+
+  color: var(--primary);
+  max-width: calc(50% - 30px);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.card:nth-child(odd) {
+  align-self: flex-end;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  border: 12px solid;
+}
+.card:nth-child(odd)::before {
+  right: 100%;
+  border-color: transparent var(--dark-2) transparent transparent;
+}
+.card:nth-child(even)::before {
+  left: 100%;
+  border-color: transparent transparent transparent var(--dark-2);
+}
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+.card p {
+  margin-bottom: 16px;
+  color: var(--light);
+}
+.card .time {
+  font-size: 14px;
+  color: var(--grey);
+}
+.card .dot {
+  position: absolute;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--secondary);
+}
+.card:nth-child(even) .dot {
+  left: calc(100% + 22px);
+}
+.card:nth-child(odd) .dot {
+  right: calc(100% + 22px);
+}
+.line {
+  position: absolute;
+  top: 16px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    left: 12px;
+  }
+  .card:nth-child(odd) {
+    align-self: flex-start;
+  }
+  .wrapper {
+    padding-left: 42px;
+  }
+  .card:nth-child(even) .dot {
+    right: calc(100% + 22px);
+    left: unset;
+  }
+  .card:nth-child(even)::before {
+    right: 100%;
+    left: unset;
+    border-color: transparent var(--dark-2) transparent transparent;
+  }
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .line,
+  .card .dot,
+  .card::before {
+    display: none;
+  }
+  .wrapper {
+    padding-left: 0;
+  }
+}
