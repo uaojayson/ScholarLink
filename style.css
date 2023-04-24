@@ -36,17 +36,20 @@ body {
 .custom-border {
   border-color: #0a2647;
   color: #0a2647;
+  font-weight: 600;
 }
 
-.btn-login:hover,
-.btn-signup:hover {
+.btn-login,
+.btn-login:hover {
   background-color: var(--primary);
   color: #fff;
+  border-color: var(--primary);
 }
 
-.btn.active {
-  background-color: #ccc;
-  color: #fff;
+.btn-signup:hover {
+  background-color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 /* start: Gallery Section */
@@ -111,7 +114,8 @@ h5 {
   line-height: 1.5;
 }
 
-.cta-mentor {
+.cta-mentor,
+.cta-mentor:hover {
   background-color: var(--secondary);
   color: #fff;
   border-radius: 5px;
@@ -120,7 +124,8 @@ h5 {
   font-weight: 600;
 }
 
-.cta-affiliate {
+.cta-affiliate,
+.cta-affiliate:hover {
   color: #fff;
   border-radius: 5px;
   border-color: var(--secondary);
