@@ -20,9 +20,16 @@ body {
   padding: 0 16px;
 }
 
-.navbar-nav .nav-link.active {
+.nav-link:hover {
+  border-bottom: 2px solid var(--secondary);
+  width: 93%;
+  transition: border-bottom 0.2s ease-in-out; /* Change the duration and timing function to your preference */
+}
+
+.nav-link.active {
+  font-weight: bold;
   border-bottom: 2px solid var(--primary);
-  width: 95%;
+  width: 93%;
   transition: border-bottom 0.2s ease-in-out; /* Change the duration and timing function to your preference */
 }
 
