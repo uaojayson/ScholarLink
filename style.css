@@ -277,11 +277,11 @@ h5 {
 }
 .card:nth-child(odd)::before {
   right: 100%;
-  border-color: transparent var(--dark-2) transparent transparent;
+  border-color: transparent var(--light) transparent transparent;
 }
 .card:nth-child(even)::before {
   left: 100%;
-  border-color: transparent transparent transparent var(--dark-2);
+  border-color: transparent transparent transparent var(--light);
 }
 .card h3 {
   text-align: center;
@@ -340,7 +340,7 @@ h5 {
   .card:nth-child(even)::before {
     right: 100%;
     left: unset;
-    border-color: transparent var(--dark-2) transparent transparent;
+    border-color: transparent var(--light) transparent transparent;
   }
   .card {
     max-width: 100%;
