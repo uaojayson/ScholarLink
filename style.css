@@ -106,20 +106,15 @@ body {
   z-index: 1;
 }
 
-.hero-tag {
-  padding: 10% 2%;
-  border-radius: 5px;
-}
 .gallery-content h1 {
   font-size: 40px;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .gallery-content p,
 h5 {
   color: #fff;
-  line-height: 1.5;
 }
 
 .cta-mentor,
