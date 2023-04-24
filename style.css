@@ -110,6 +110,24 @@ h5 {
   color: #fff;
   line-height: 1.5;
 }
+
+.cta-mentor {
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 5px;
+  border-color: #0a2647;
+  color: #0a2647;
+  font-weight: 600;
+}
+
+.cta-affiliate {
+  color: #fff;
+  border-radius: 5px;
+  border-color: var(--secondary);
+  margin-left: 2%;
+  font-weight: 600;
+}
+
 .gallery-images-box {
   padding-left: 300px;
   min-height: 500px;
