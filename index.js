@@ -8,4 +8,3 @@ function setActiveLink(link) {
     // Add the "active" class to the clicked link
     link.classList.add('active');
   }
-  
