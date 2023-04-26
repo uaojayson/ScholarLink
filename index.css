@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
 
 * {
   margin: 0;
@@ -467,10 +470,9 @@ h2 {
   z-index: 99;
 }
 
-.img-mentor {
+img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -491,3 +493,54 @@ h2 {
 }
 
 /* End: Mentor Section */
+
+/* Start Success stories  */
+
+.Success{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: var(--light);
+  font-weight: 700;
+  text-align: center;
+}
+.Guide {
+  font-family: 'lato', sans-serif;
+  font-size: 30px;
+  color: var(--light);
+  font-weight: 300;
+  text-align: center;
+}
+
+.Students{
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(
+    var(--primary) 40%,
+    rgba(33, 150, 243, 0.5)
+  );
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.card-features {
+  position: relative;
+  height: 450px;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 40px 50px;
+  background: #fff,transparent;
+  margin-top: 3%;
+  margin-left: 1.5%;
+  margin-bottom: 5%;
+  margin-right: 30px;
+}
+
+.featured-student{
+  height: 20vh;
+  width: 10vw;
+  border-radius:80% ;
+}
+
+.Student-content{
+  color: var(--light);
+}
