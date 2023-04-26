@@ -447,7 +447,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
-  padding: 40px 50px;
+  padding: 110px 50px;
   background: #fff;
   cursor: pointer;
   margin-top: 3%;
@@ -456,7 +456,7 @@ h2 {
 }
 
 .card-feature:hover {
-  height: 600px;
+  height: 750px;
 }
 
 .imgbox {
@@ -488,6 +488,28 @@ h2 {
 
 .content h2 {
   color: #7f9ead;
+}
+
+@media only screen and (max-width: 575px) {
+  /* styles for small phones */
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* styles for large phones and portrait tablets */
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* styles for landscape tablets and small laptops */
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* styles for medium laptops and desktops */
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  /* styles for large laptops and desktops */
+}
+@media only screen and (min-width: 1400px) and (max-width: 1919.98px) {
+  /* styles for extra large desktops */
+}
+@media only screen and (min-width: 1920px) {
+  /* styles for very large desktops */
 }
 
 /* End: Mentor Section */
