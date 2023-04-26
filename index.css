@@ -625,6 +625,13 @@ img {
 
 /* Start Success stories  */
 
+.success-stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .Success {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
