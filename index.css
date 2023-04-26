@@ -437,9 +437,16 @@ h2 {
   margin-top: 3%;
   padding-top: 2%;
 }
-.subtite-mentor {
+.subtitle-mentor {
   color: white;
   font-weight: 300;
+}
+
+.featured-mentors{
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 .featured-mentor {
@@ -502,22 +509,32 @@ h2 {
 @media only screen and (max-width: 575px) {
   /* styles for small phones */
 
+
+  .featured-mentors {
+    margin: 10% 2%
+    justify-content: center;
+  }
   .featured-mentor {
     flex-direction: column;
   }
 
   .title-mentor {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 600;
-    margin-bottom: 36px;
     color: var(--light);
     padding-top: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
+    text-align: left;
+    margin-left: 2%;
   }
 
-  .subtite-mentor {
+  .subtitle-mentor {
     color: white;
     font-weight: 300;
+    text-align: left;
+    margin-left: 2%;
+    padding-bottom: 5%;
+    font-size: 16px;
   }
   .card-feature {
     margin-left: auto;
@@ -540,7 +557,7 @@ h2 {
     margin-right: 5%;
   }
 
-  .subtite-mentor {
+  .subtitle-mentor {
     color: white;
     font-weight: 300;
   }
@@ -565,7 +582,7 @@ h2 {
     margin-right: 5%;
   }
 
-  .subtite-mentor {
+  .subtitle-mentor {
     color: white;
     font-weight: 300;
   }
