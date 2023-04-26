@@ -422,15 +422,24 @@ h2 {
 
 /* Start: Mentor Section */
 .mentor {
-  width: 100%;
-  height: 80vh;
-  background-image: linear-gradient(
-    var(--primary) 40%,
-    rgba(33, 150, 243, 0.5)
-  );
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
   background-position: center;
   background-size: cover;
   text-align: center;
+}
+
+.title-mentor {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  color: var(--light);
+  text-align: center;
+  margin-top: 3%;
+  padding-top: 2%;
+}
+.subtite-mentor {
+  color: white;
+  font-weight: 300;
 }
 
 .featured-mentor {
@@ -447,7 +456,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
-  padding: 110px 50px;
+  padding: 40px 50px;
   background: #fff;
   cursor: pointer;
   margin-top: 3%;
@@ -456,7 +465,7 @@ h2 {
 }
 
 .card-feature:hover {
-  height: 750px;
+  height: 700px;
 }
 
 .imgbox {
@@ -483,7 +492,7 @@ h2 {
 
 .card-feature:hover > .content {
   opacity: 1;
-  transform: translateY(-200px);
+  transform: translateY(-300px);
 }
 
 .content h2 {
@@ -492,24 +501,100 @@ h2 {
 
 @media only screen and (max-width: 575px) {
   /* styles for small phones */
-}
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  /* styles for large phones and portrait tablets */
-}
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  /* styles for landscape tablets and small laptops */
-}
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-  /* styles for medium laptops and desktops */
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
-  /* styles for large laptops and desktops */
-}
-@media only screen and (min-width: 1400px) and (max-width: 1919.98px) {
-  /* styles for extra large desktops */
-}
-@media only screen and (min-width: 1920px) {
-  /* styles for very large desktops */
+
+  .featured-mentor {
+    flex-direction: column;
+  }
+
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+
+  .subtite-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-left: auto;
+    margin-top: 10%;
+  }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* styles for large phones and portrait tablets */
+  .featured-mentor {
+    flex-direction: column;
+  }
+
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+
+  .subtite-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* styles for landscape tablets and small laptops */
+
+  .featured-mentor {
+    flex-direction: column;
+  }
+
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+
+  .subtite-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* styles for medium laptops and desktops */
+  .featured-mentor {
+    flex-direction: column;
+  }
+
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+
+  .subtite-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-top: 10%;
+  }
+}
 /* End: Mentor Section */
