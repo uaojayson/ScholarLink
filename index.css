@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap");
 
 * {
   margin: 0;
@@ -439,17 +439,16 @@ h2 {
   text-align: center;
   margin-top: 3%;
   padding-top: 2%;
+  font-family: "Montserrat", sans-serif;
 }
 .subtitle-mentor {
   color: white;
   font-weight: 300;
 }
 
-.featured-mentors{
+.featured-mentors {
   justify-content: center;
   align-items: center;
-
-
 }
 
 .featured-mentor {
@@ -508,11 +507,8 @@ img {
   color: #7f9ead;
 }
 
-
-
 @media only screen and (max-width: 575px) {
   /* styles for small phones */
-
 
   .featured-mentors {
     margin: 10% 2%;
@@ -539,6 +535,7 @@ img {
     margin-left: 2%;
     padding-bottom: 5%;
     font-size: 16px;
+    font-family: "lato", sans-serif;
   }
   .card-feature {
     margin-left: auto;
@@ -622,22 +619,22 @@ img {
 
 /* Start Success stories  */
 
-.Success{
-  font-family: 'Montserrat', sans-serif;
+.Success {
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: var(--light);
   font-weight: 700;
   text-align: center;
 }
 .Guide {
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 30px;
   color: var(--light);
   font-weight: 300;
   text-align: center;
 }
 
-.Students{
+.Students {
   width: 100%;
   height: 80vh;
   background-image: linear-gradient(
@@ -654,19 +651,19 @@ img {
   border-radius: 10px;
   transition: 0.3s;
   padding: 40px 50px;
-  background: #fff,transparent;
+  background: #fff, transparent;
   margin-top: 3%;
   margin-left: 1.5%;
   margin-bottom: 5%;
   margin-right: 30px;
 }
 
-.featured-student{
+.featured-student {
   height: 20vh;
   width: 10vw;
-  border-radius:80% ;
+  border-radius: 80%;
 }
 
-.Student-content{
+.Student-content {
   color: var(--light);
 }
