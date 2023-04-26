@@ -114,7 +114,8 @@ body {
 }
 
 .gallery-content h1 {
-  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
   color: #fff;
   font-weight: 700;
   margin-bottom: 24px;
@@ -122,6 +123,7 @@ body {
 .gallery-content p,
 h5 {
   color: #fff;
+  font-family: "lato", sans-serif;
 }
 
 .cta-mentor,
@@ -250,7 +252,8 @@ h5 {
   margin: 48px auto;
 }
 .title {
-  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
   font-weight: 600;
   margin-bottom: 36px;
   color: var(--light);
@@ -413,6 +416,8 @@ h2 {
   display: inline-block;
   margin: 15px 0;
   color: var(--light);
+  font-family: "lato", sans-serif;
+  font-weight: 600;
 }
 .counter-box .fa,
 .fa-solid {
@@ -432,7 +437,7 @@ h2 {
 }
 
 .title-mentor {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 600;
   margin-bottom: 36px;
   color: var(--light);
@@ -444,6 +449,7 @@ h2 {
 .subtitle-mentor {
   color: white;
   font-weight: 300;
+  font-family: "lato", sans-serif;
 }
 
 .featured-mentors {
