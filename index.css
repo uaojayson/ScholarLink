@@ -621,6 +621,7 @@ img {
 
 .stories {
   text-align: center;
+
   width: 100%;
   padding-top: 1%;
   background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
@@ -676,7 +677,7 @@ img {
 
 .card-features {
   position: relative;
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
   transition: 0.3s;
   padding: 40px 50px;
@@ -688,8 +689,8 @@ img {
 }
 
 .featured-student {
-  height: 20vh;
-  width: 10vw;
+  height: 30vh;
+  width: 15vw;
   border-radius: 80%;
 }
 
@@ -712,9 +713,5 @@ img {
   .card-features {
     height: auto;
     margin: 10px 0;
-  }
-  .featured-student {
-    height: 10vh;
-    width: 5vw;
   }
 }
