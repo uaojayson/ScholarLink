@@ -45,7 +45,7 @@ body {
 .custom-border {
   border-color: #0a2647;
   color: #0a2647;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .btn-login,
@@ -121,7 +121,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   color: #fff;
-  font-weight: 700;
   margin-bottom: 24px;
 }
 
@@ -138,7 +137,7 @@ h5 {
   border-radius: 5px;
   border-color: #0a2647;
   color: #0a2647;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .cta-affiliate,
@@ -147,7 +146,7 @@ h5 {
   border-radius: 5px;
   border-color: var(--secondary);
   margin-left: 2%;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .gallery-images-box {
@@ -264,8 +263,8 @@ h5 {
 }
 .title {
   font-family: "Montserrat", sans-serif;
-  font-size: 45px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 500;
   margin-bottom: 36px;
   color: var(--light);
   text-align: center;
@@ -279,7 +278,6 @@ h5 {
 .card {
   padding: 24px;
   border-radius: 12px;
-
   color: var(--primary);
   max-width: calc(50% - 30px);
   position: relative;
@@ -308,7 +306,7 @@ h5 {
   font-family: "lato", sans-serif;
   text-align: center;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
   color: var(--secondary);
 }
@@ -316,6 +314,8 @@ h5 {
   margin-bottom: 16px;
   color: var(--light);
   text-align: justify;
+  font-size: 16px;
+  font-family: "Rubik";
 }
 .card .time {
   font-size: 14px;
@@ -393,6 +393,7 @@ h5 {
   background-size: cover;
   text-align: center;
   position: relative;
+  font-family: "Rubik";
 }
 #row-milestone {
   width: 90%;
@@ -422,12 +423,12 @@ h5 {
   opacity: 0.7;
 }
 h2 {
-  font-size: 50px;
+  font-size: 45px;
   display: inline-block;
   margin: 15px 0;
   color: var(--light);
-  font-family: "lato", sans-serif;
-  font-weight: 600;
+  font-family: "Rubik";
+  font-weight: 500;
 }
 .counter-box .fa,
 .fa-solid {
@@ -446,8 +447,8 @@ h2 {
   text-align: center;
 }
 .title-mentor {
-  font-size: 45px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 500;
   margin-bottom: 36px;
   color: var(--light);
   text-align: center;
@@ -457,7 +458,6 @@ h2 {
 }
 .subtitle-mentor {
   color: white;
-  font-weight: 300;
   font-family: "lato", sans-serif;
   font-size: 24px;
 }
@@ -505,6 +505,7 @@ img {
   transform: translateY(-450px);
   opacity: 0;
   transition: 0.3s;
+  font-family: "Rubik";
 }
 .card-feature:hover > .content {
   opacity: 1;
@@ -512,6 +513,7 @@ img {
 }
 .content h2 {
   color: #7f9ead;
+  font-family: "lato", sans-serif;
 }
 
 @media only screen and (max-width: 575px) {
@@ -637,9 +639,9 @@ img {
 
 .Success {
   font-family: "Montserrat", sans-serif;
-  font-size: 45px;
+  font-size: 36px;
   color: var(--light);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 .Guide {
@@ -651,7 +653,6 @@ img {
 }
 .Students {
   display: grid;
-
   background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
     url(assets/success.jpeg);
   background-position: center;
@@ -678,4 +679,5 @@ img {
 }
 .Student-content {
   color: var(--light);
+  font-family: "lato", sans-serif;
 }
