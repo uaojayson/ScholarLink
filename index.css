@@ -619,10 +619,9 @@ img {
 .stories {
   text-align: center;
   width: 100%;
-  height: 60vh;
-  padding-top: 1%;
 
-  opacity: 0.8;
+  padding-top: 1%;
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
 }
 
 .col-stories {
@@ -652,8 +651,6 @@ img {
 }
 .Students {
   display: grid;
-  width: 100%;
-  height: 60vh;
 
   background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
     url(assets/success.jpeg);
