@@ -627,6 +627,7 @@ img {
 }
 
 .col-stories {
+  flex: 1;
   flex-basis: 22%;
   text-align: center;
   color: var(--light);
@@ -651,6 +652,7 @@ img {
   font-weight: 500;
   text-align: center;
 }
+
 .Guide {
   font-family: "lato", sans-serif;
   font-size: 24px;
@@ -658,8 +660,12 @@ img {
   font-weight: 300;
   text-align: center;
 }
+
 .Students {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
     url(assets/success.jpeg);
   background-position: center;
@@ -667,6 +673,7 @@ img {
   text-align: center;
   position: relative;
 }
+
 .card-features {
   position: relative;
   height: 500px;
@@ -679,6 +686,7 @@ img {
   margin-bottom: 5%;
   margin-right: 30px;
 }
+
 .featured-student {
   height: 20vh;
   width: 10vw;
@@ -689,8 +697,24 @@ img {
   color: #ffb100;
   font-family: "lato", sans-serif;
 }
+
 .Student-content {
   font-size: 16px;
   color: var(--light);
   font-family: "Rubik";
+}
+
+@media only screen and (max-width: 992px) {
+  .col-stories {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+  .card-features {
+    height: auto;
+    margin: 10px 0;
+  }
+  .featured-student {
+    height: 10vh;
+    width: 5vw;
+  }
 }
