@@ -16,6 +16,9 @@
   --dark-2: #252728;
   --grey: #aaa;
   --light: #fff;
+  --clr-primary: #651fff;
+  --clr-gray: #37474f;
+  --clr-gray-light: #b0bec5;
 }
 body {
   font-family: "Urbanist", sans-serif;
