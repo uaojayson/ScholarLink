@@ -677,7 +677,7 @@ img {
 
 .card-features {
   position: relative;
-  height: 600px;
+  height: 700px;
   border-radius: 10px;
   transition: 0.3s;
   padding: 40px 50px;
@@ -689,9 +689,10 @@ img {
 }
 
 .featured-student {
-  height: 30vh;
-  width: 15vw;
-  border-radius: 80%;
+  height: 40vh;
+  width: 100%;
+  border-radius: 50%;
+  border: solid 1px var(--secondary);
 }
 
 .student-name {
