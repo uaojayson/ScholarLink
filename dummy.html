@@ -38,112 +38,64 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
-    <section class="stories">
-      <div class="story-title">
-        <h1 class="Success">Our Student's Success Stories</h1>
-        <h4 class="Guide">
-          <em>
-            With the right amount of guidance and motivation, every student can
-            be what their hearts truly desire.
-          </em>
-        </h4>
+    <div class="slider">
+      <input type="radio" name="toggle" id="btn-1" checked />
+      <input type="radio" name="toggle" id="btn-2" />
+      <input type="radio" name="toggle" id="btn-3" />
+
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
       </div>
 
-      <div class="Students">
-        <div class="card-features">
-          <div class="row row-stories">
-            <div class="col col-stories">
-              <div class="Student-Card">
-                <img
-                  src="Charles student success/image.png"
-                  class="featured-student img-fluid"
-                  alt="Graduates"
-                />
-              </div>
-
-              <div class="Student-content">
-                <h4 class="py-3">Cindy De Vega</h4>
-                <p>
-                  Cindy, a ScholarLink student, had a dream of attending a
-                  prestigious university. With the help of her mentor, she was
-                  able to create a strong academic plan, develop her leadership
-                  skills, and secure a full scholarship to her dream school.
-                  Cindy is now studying to become a doctor and is grateful for
-                  the support she received from ScholarLink.
-                </p>
-              </div>
-            </div>
-
-            <div class="col col-stories">
-              <div class="Student-Card">
-                <img
-                  src="Charles student success/image1.png"
-                  class="featured-student img-fluid"
-                  alt="Graduates"
-                />
-              </div>
-
-              <div class="Student-content">
-                <h4 class="py-3">Jann Christian Yu</h4>
-                <p>
-                  Jann, a ScholarLink mentee, was once a struggling high school
-                  student from an underprivileged community. Through the
-                  guidance and support of his mentor, Jann discovered his
-                  passion for science and pursued a degree in Biotechnology. He
-                  recently graduated with honors and is now working as a
-                  research assistant, paving the way for a better future for his
-                  family.
-                </p>
-              </div>
-            </div>
-
-            <div class="col col-stories">
-              <div class="Student-Card">
-                <img
-                  src="Charles student success/image2.png"
-                  class="featured-student img-fluid"
-                  alt="Graduates"
-                />
-              </div>
-
-              <div class="Student-content">
-                <h4 class="py-3">Addison Stewart</h4>
-                <p>
-                  Addison, a once struggling high school student, found new
-                  opportunities through ScholarLink's mentorship program. With
-                  the guidance of her mentor, she discovered her passion for
-                  biology and received valuable advice on college applications.
-                  Addison is now studying at a top university on a full
-                  scholarship and has a bright future ahead.
-                </p>
-              </div>
-            </div>
-
-            <div class="col col-stories">
-              <div class="Student-Card">
-                <img
-                  src="Charles student success/image3.png"
-                  class="featured-student img-fluid"
-                  alt="Graduates"
-                />
-              </div>
-
-              <div class="Student-content">
-                <h4 class="py-3">Yosef Jam Singh</h4>
-                <p>
-                  Yosef was struggling with his grades and had no clear plan for
-                  his future. ScholarLink connected him with a mentor who guided
-                  him through academic planning and career exploration. With the
-                  mentor's help, Yosef found his passion in computer science and
-                  secured a scholarship to a top university. He is now a
-                  successful software engineer.
-                </p>
-              </div>
-            </div>
+      <ul class="slides">
+        <li class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">story #1</h2>
+            <p class="slide-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              dignissimos commodi eos totam perferendis possimus dolorem,
+              deleniti vitae harum? Enim.
+            </p>
           </div>
-        </div>
-      </div>
-    </section>
+          <p class="slide-image">
+            <img
+              src="animalmemes14-5ae229b4ae9ab80037197fef.jpg"
+              alt="stuff"
+              width="320"
+              height="240"
+            />
+          </p>
+        </li>
+        <li class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">Story #2</h2>
+            <p class="slide-text">
+              Nisi ratione magni ea quis animi incidunt velit voluptate dolorem
+              enim possimus, nam provident excepturi ipsam nihil molestiae minus
+              delectus!
+            </p>
+          </div>
+          <p class="slide-image">
+            <img src="happy.jfif" alt="stuff" width="320" height="240" />
+          </p>
+        </li>
+        <li class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">Story #3</h2>
+            <p class="slide-text">
+              Quisquam quod ut quasi, vero obcaecati laudantium asperiores
+              corporis ad atque. Expedita fugit dicta maxime vel doloribus
+              sequi, facilis dignissimos.
+            </p>
+          </div>
+          <p class="slide-image">
+            <img src="nice 2.jpg" alt="stuff" width="320" height="240" />
+          </p>
+        </li>
+      </ul>
+    </div>
 
     <div id="root"></div>
     <script src="dummy.js" type="text/babel"></script>

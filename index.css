@@ -607,7 +607,7 @@ img {
     padding-top: 5%;
     margin-right: 5%;
   }
-  .subtite-mentor {
+  .subtitle-mentor {
     color: white;
     font-weight: 300;
   }
@@ -690,9 +690,8 @@ img {
 
 .featured-student {
   height: 40vh;
-
-  border-radius: 80%;
-  border: solid 1px var(--secondary);
+  border-radius: 50%;
+  border: solid 3px var(--secondary);
 }
 
 .student-name {
