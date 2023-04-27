@@ -621,12 +621,7 @@ img {
   width: 100%;
   height: 60vh;
   padding-top: 1%;
-  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
-    url(assets/success.jpeg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  position: relative;
+
   opacity: 0.8;
 }
 
@@ -659,18 +654,17 @@ img {
   display: grid;
   width: 100%;
   height: 60vh;
-  margin-top: 5%;
-  background-image: linear-gradient(
-    rgba(33, 150, 243, 0.5),
-    var(--primary) 40%
-  );
+
+  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
+    url(assets/success.jpeg);
   background-position: center;
   background-size: cover;
   text-align: center;
+  position: relative;
 }
 .card-features {
   position: relative;
-  height: 450px;
+  height: 500px;
   border-radius: 10px;
   transition: 0.3s;
   padding: 40px 50px;
@@ -686,5 +680,6 @@ img {
   border-radius: 80%;
 }
 .Student-content {
+  font-weight: 500;
   color: var(--light);
 }
