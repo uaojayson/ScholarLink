@@ -621,7 +621,6 @@ img {
 
 .stories {
   text-align: center;
-
   width: 100%;
   padding-top: 1%;
   background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
