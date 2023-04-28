@@ -139,6 +139,7 @@ h5 {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  font-size: 22px;
 }
 
 .cta-affiliate,
@@ -148,6 +149,7 @@ h5 {
   border-color: var(--secondary);
   margin-left: 2%;
   font-weight: 500;
+  font-size: 22px;
 }
 
 .gallery-images-box {
@@ -263,7 +265,7 @@ h5 {
 /* Start: What We Provide Section */
 
 .what-we-provide {
-  max-width: 991px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 16px;
   margin: 48px auto;
@@ -291,7 +293,7 @@ h5 {
   color: var(--primary);
   max-width: calc(50% - 30px);
   position: relative;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #0b305a;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -561,6 +563,20 @@ img {
   font-family: "lato", sans-serif;
 }
 
+.cta-featured-mentor,
+.cta-featured-mentor:active,
+.cta-featured-mentor:visited {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 22px;
+  background-color: var(--secondary);
+}
+
+.cta-featured-mentor:hover {
+  background-color: var(--primary);
+  color: white;
+  border: solid 1px var(--secondary);
+}
 /* End: Mentor Section */
 
 /* Start Success stories  */
@@ -611,7 +627,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  flex-wrap: wrap;
   background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
     url(assets/success.jpeg);
   background-position: center;
@@ -651,6 +667,30 @@ img {
   font-size: 16px;
   color: var(--light);
   font-family: "Rubik";
+}
+
+.success-footer {
+  margin-top: 3%;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+
+  font-family: "Rubik";
+}
+
+.cta-success-story,
+.cta-success-story:active,
+.cta-success-story:visited {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 22px;
+  background-color: var(--secondary);
+}
+
+.cta-success-story:hover {
+  background-color: var(--primary);
+  color: white;
+  border: solid 1px var(--secondary);
 }
 
 @media only screen and (max-width: 992px) {
