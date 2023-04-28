@@ -9,7 +9,6 @@
   box-sizing: border-box;
   font: inherit;
 }
-
 :root {
   --primary: #0a2647;
   --secondary: #ffb100;
@@ -18,12 +17,10 @@
   --grey: #aaa;
   --light: #fff;
 }
-
 body {
   font-family: "Urbanist", sans-serif;
   background-color: var(--primary);
 }
-
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -35,32 +32,35 @@ body {
 .nav-link:hover {
   border-bottom: 2px solid var(--secondary);
   width: 93%;
-  transition: border-bottom 0.2s ease-in-out;
-  /* Change the duration and timing function to your preference */
+  transition: border-bottom 0.2s ease-in-out; /* Change the duration and timing function to your preference */
 }
+
 .nav-link.active {
   font-weight: bold;
   border-bottom: 2px solid var(--primary);
   width: 93%;
-  transition: border-bottom 0.2s ease-in-out;
-  /* Change the duration and timing function to your preference */
+  transition: border-bottom 0.2s ease-in-out; /* Change the duration and timing function to your preference */
 }
+
 .custom-border {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
 }
+
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
 }
+
 .btn-signup:hover {
   background-color: var(--secondary);
   background-color: var(--secondary);
   color: var(--primary);
 }
+
 /* End: Navigation Bar */
 
 /* Start: Hero Gallery Section */
@@ -76,9 +76,11 @@ body {
   left: 0;
   width: 940px;
   height: 100%;
-  background-image: linear-gradient(90deg,
-      var(--primary) 50%,
-      transparent 100%);
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 50%,
+    transparent 100%
+  );
   z-index: 1;
   pointer-events: none;
 }
@@ -193,12 +195,10 @@ h5 {
   0% {
     transform: translateY(0);
   }
-
   100% {
     transform: translateY(-50%);
   }
 }
-
 /* end: Gallery Section */
 
 /* start: Breakpoints */
@@ -222,7 +222,6 @@ h5 {
   .gallery-images-box {
     padding-left: 100px;
   }
-
   .gallery-section::before {
     width: 720px;
   }
@@ -238,21 +237,20 @@ h5 {
     height: auto;
     padding: 48px 0 24px;
   }
-
   .gallery-images-box {
     padding-left: 0;
     margin-left: -300px;
     min-height: 700px;
   }
-
   .gallery-section::before {
-    background-image: linear-gradient(180deg,
-        var(--primary) 40%,
-        transparent 100%);
+    background-image: linear-gradient(
+      180deg,
+      var(--primary) 40%,
+      transparent 100%
+    );
     height: 500px;
   }
 }
-
 /* End: Breakpoints/ Hero Gallery Section */
 
 /* Start: What We Provide Section */
@@ -263,7 +261,6 @@ h5 {
   padding: 0 16px;
   margin: 48px auto;
 }
-
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
@@ -272,14 +269,12 @@ h5 {
   color: var(--light);
   text-align: center;
 }
-
 .wrapper {
   display: flex;
   flex-direction: column;
   position: relative;
   grid-gap: 16px;
 }
-
 .card {
   padding: 24px;
   border-radius: 12px;
@@ -290,32 +285,23 @@ h5 {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
-
-.card:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
 .card:nth-child(odd) {
   align-self: flex-end;
 }
-
 .card::before {
   content: "";
   position: absolute;
   top: 12px;
   border: 12px solid;
 }
-
 .card:nth-child(odd)::before {
   right: 100%;
   border-color: transparent var(--light) transparent transparent;
 }
-
 .card:nth-child(even)::before {
   left: 100%;
   border-color: transparent transparent transparent var(--light);
 }
-
 .card h3 {
   font-family: "lato", sans-serif;
   text-align: center;
@@ -324,7 +310,6 @@ h5 {
   margin-bottom: 10px;
   color: var(--secondary);
 }
-
 .card p {
   margin-bottom: 16px;
   color: var(--light);
@@ -332,12 +317,10 @@ h5 {
   font-size: 16px;
   font-family: "Rubik";
 }
-
 .card .time {
   font-size: 14px;
   color: var(--grey);
 }
-
 .card .dot {
   position: absolute;
   top: 16px;
@@ -346,15 +329,12 @@ h5 {
   border-radius: 50%;
   background: var(--secondary);
 }
-
 .card:nth-child(even) .dot {
   left: calc(100% + 22px);
 }
-
 .card:nth-child(odd) .dot {
   right: calc(100% + 22px);
 }
-
 .line {
   position: absolute;
   top: 16px;
@@ -369,39 +349,32 @@ h5 {
   .line {
     left: 12px;
   }
-
   .card:nth-child(odd) {
     align-self: flex-start;
   }
-
   .wrapper {
     padding-left: 42px;
   }
-
   .card:nth-child(even) .dot {
     right: calc(100% + 22px);
     left: unset;
   }
-
   .card:nth-child(even)::before {
     right: 100%;
     left: unset;
     border-color: transparent var(--light) transparent transparent;
   }
-
   .card {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 420px) {
-
   .line,
   .card .dot,
   .card::before {
     display: none;
   }
-
   .wrapper {
     padding-left: 0;
   }
@@ -422,7 +395,6 @@ h5 {
   position: relative;
   font-family: "Rubik";
 }
-
 #row-milestone {
   width: 90%;
   display: flex;
@@ -433,13 +405,11 @@ h5 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .col {
   flex-basis: 22%;
   text-align: center;
   color: var(--light);
 }
-
 .counter-box {
   width: 100%;
   height: 100%;
@@ -452,12 +422,6 @@ h5 {
   backdrop-filter: blur(5px);
   opacity: 0.85;
 }
-
-.counter-box:hover {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 30px -4px #5a6280;
-}
 h2 {
   font-size: 45px;
   display: inline-block;
@@ -466,7 +430,6 @@ h2 {
   font-family: "Rubik";
   font-weight: 500;
 }
-
 .counter-box .fa,
 .fa-solid {
   font-size: 40px;
@@ -474,14 +437,15 @@ h2 {
   display: block;
 }
 
-/* Start: Featured Mentor Section */
+/* End: Counter Section */
+
+/* Start: Mentor Section */
 .mentor {
   background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
   background-position: center;
   background-size: cover;
   text-align: center;
 }
-
 .title-mentor {
   font-size: 36px;
   font-weight: 500;
@@ -492,71 +456,165 @@ h2 {
   padding-top: 2%;
   font-family: "Montserrat", sans-serif;
 }
-
 .subtitle-mentor {
   color: white;
   font-family: "lato", sans-serif;
   font-size: 24px;
 }
-
+.featured-mentors {
+  justify-content: center;
+  align-items: center;
+}
 .featured-mentor {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
-
 .card-feature {
   position: relative;
   width: 500px;
-  height: 500px;
+  height: 450px;
   border-radius: 10px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
-  padding: 60px 50px;
+  padding: 40px 50px;
   background: #fff;
   cursor: pointer;
-  margin: 30px;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-right: 30px;
   border: solid 1px var(--primary);
 }
-
 .card-feature:hover {
-  height: 750px;
+  height: 700px;
 }
-
 .imgbox {
   position: relative;
   width: 100%;
   height: 100%;
-  transform: translateY(-70px);
+  transform: translateY(-80px);
   z-index: 99;
-  object-fit: cover;
 }
-
 img {
   width: 100%;
   border-radius: 10px;
 }
-
 .content {
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-align: center;
   transform: translateY(-450px);
   opacity: 0;
   transition: 0.3s;
   font-family: "Rubik";
 }
-
-.card-feature:hover>.content {
+.card-feature:hover > .content {
   opacity: 1;
   transform: translateY(-300px);
 }
-
 .content h2 {
   color: #7f9ead;
   font-family: "lato", sans-serif;
 }
 
+@media only screen and (max-width: 575px) {
+  /* styles for small phones */
+
+  .featured-mentors {
+    margin: 10% 2%;
+    justify-content: center;
+  }
+  .featured-mentor {
+    flex-direction: column;
+  }
+  .title-mentor {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 10%;
+    text-align: left;
+    margin-left: 2%;
+  }
+  .subtitle-mentor {
+    color: white;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 2%;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family: "lato", sans-serif;
+  }
+  .card-feature {
+    margin-left: auto;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* styles for large phones and portrait tablets */
+  .featured-mentor {
+    flex-direction: column;
+  }
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+  .subtitle-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* styles for landscape tablets and small laptops */
+  .featured-mentor {
+    flex-direction: column;
+  }
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+  .subtitle-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* styles for medium laptops and desktops */
+  .featured-mentor {
+    flex-direction: column;
+  }
+  .title-mentor {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    color: var(--light);
+    padding-top: 5%;
+    margin-right: 5%;
+  }
+  .subtitle-mentor {
+    color: white;
+    font-weight: 300;
+  }
+  .card-feature {
+    margin-top: 10%;
+  }
+}
 /* End: Mentor Section */
 
 /* Start Success stories  */
@@ -580,7 +638,7 @@ img {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   opacity: 0.9;
-  border: solid 1px var(--secondary);
+  // border: solid 1px var(--secondary);
 }
 
 .story-title {
@@ -650,11 +708,26 @@ img {
   font-family: "Rubik";
 }
 
+@media only screen and (max-width: 992px) {
+  .col-stories {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+  .card-features {
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
 /* End Success stories  */
 
+/* Start Testimonials  */
+
 #testimonials {
-  background-image: linear-gradient(rgba(13, 117, 202, 0.5),
-      var(--primary) 40%);
+  background-image: linear-gradient(
+    rgba(13, 117, 202, 0.5),
+    var(--primary) 40%
+  );
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -672,14 +745,12 @@ img {
   font-size: 36px;
   padding-top: 5%;
 }
-
 .wrapper {
   max-width: 1080px;
   margin: 50px auto;
   padding: 0px 20px;
   position: relative;
 }
-
 .wrapper .center-line {
   position: absolute;
   height: 100%;
@@ -689,19 +760,15 @@ img {
   top: 20px;
   transform: translateX(-50%);
 }
-
 .wrapper .row {
   display: flex;
 }
-
 .wrapper .row-1 {
   justify-content: flex-start;
 }
-
 .wrapper .row-2 {
   justify-content: flex-end;
 }
-
 .wrapper .row section {
   background: #fff;
   border-radius: 5px;
@@ -709,7 +776,6 @@ img {
   padding: 20px;
   position: relative;
 }
-
 .wrapper .row section::before {
   position: absolute;
   content: "";
@@ -720,15 +786,12 @@ img {
   z-index: -1;
   transform: rotate(45deg);
 }
-
 .row-1 section::before {
   right: -7px;
 }
-
 .row-2 section::before {
   left: -7px;
 }
-
 .row section .icon,
 .center-line .scroll-icon {
   position: absolute;
@@ -743,31 +806,26 @@ img {
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
-
 .center-line .scroll-icon {
   bottom: 0px;
   left: 50%;
   font-size: 25px;
   transform: translateX(-50%);
 }
-
 .row-1 section .icon {
   top: 15px;
   right: -60px;
 }
-
 .row-2 section .icon {
   top: 15px;
   left: -60px;
 }
-
 .row section .details,
 .row section .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .row section .details {
   font-size: 22px;
   font-weight: 600;
@@ -777,7 +835,6 @@ img {
   font-family: "latoregular", sans-serif;
   font-weight: 500;
 }
-
 .row section p {
   margin: 10px 0 17px 0;
   font-family: "latoregular", sans-serif;
@@ -799,32 +856,25 @@ img {
   .wrapper .center-line {
     left: 40px;
   }
-
   .wrapper .row {
     margin: 30px 0 3px 60px;
   }
-
   .wrapper .row section {
     width: 100%;
   }
-
   .row-1 section::before {
     left: -7px;
   }
-
   .row-1 section .icon {
     left: -60px;
   }
 }
-
 @media (max-width: 440px) {
-
   .wrapper .center-line,
   .row section::before,
   .row section .icon {
     display: none;
   }
-
   .wrapper .row {
     margin: 10px 0;
   }
