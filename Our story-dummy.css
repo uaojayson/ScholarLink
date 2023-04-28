@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+:root {
+  --primary: #0a2647;
+  --secondary: #ffb100;
+  --dark-1: #161819;
+  --dark-2: #252728;
+  --grey: #aaa;
+  --light: #fff;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--primary);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Start: Navigation Bar */
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--secondary);
+  width: 93%;
+  transition: border-bottom 0.2s ease-in-out;
+  /* Change the duration and timing function to your preference */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary);
+  width: 93%;
+  transition: border-bottom 0.2s ease-in-out;
+  /* Change the duration and timing function to your preference */
+}
+
+.custom-border {
+  border-color: #0a2647;
+  color: #0a2647;
+  font-weight: 500;
+}
+
+.btn-login,
+.btn-login:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.btn-signup:hover {
+  background-color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+/* End: Navigation Bar */
+
+/* Start:How We Started  */
+.Shared-stories{
+  text-align: center;
+  width: 100%;
+  padding-top: 9%;
+  padding-bottom: 3%;
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+} 
+.Story{
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: var(--light);
+  font-weight: 500;
+  text-align: center;
+}
+
+.bg-story{
+  font-family: "lato", sans-serif;
+  font-size: 24px;
+  color: var(--light);
+  font-weight: 300;
+  text-align: center;
+}
+.sh-contents{
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: var(--greyt);
+  font-weight: 300;
+  text-align: center;
+}
+/* End: How We Started  */
+
+/* Start Success stories  */
+
+.stories {
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  padding-top: 10%;
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+}
+
+.col-stories {
+  flex: 1;
+  flex-basis: 22%;
+  text-align: center;
+  color: var(--light);
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin: 0 10px;
+  background-color: var(--primary);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  opacity: 0.9;
+}
+
+.story-title {
+  margin: 2% 2%;
+  justify-content: center;
+}
+
+.Success {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: var(--light);
+  font-weight: 500;
+  text-align: center;
+}
+
+.Guide {
+  font-family: "lato", sans-serif;
+  font-size: 24px;
+  color: var(--light);
+  font-weight: 300;
+  text-align: center;
+}
+
+.Students {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.card-features {
+  position: relative;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 40px 50px;
+  background: #fff, transparent;
+  margin-top: 3%;
+  margin-left: 1.5%;
+  margin-bottom: 5%;
+  margin-right: 30px;
+}
+
+.featured-student {
+  height: 35vh;
+  width: 100%;
+  position: relative;
+  border-radius: 80%;
+  border: solid 2px var(--secondary);
+  clip-path: circle(200px at center);
+}
+
+.student-name {
+  
+  font-family: "lato", sans-serif;
+}
+
+.Student-content {
+  font-size: 16px;
+  color: var(--light);
+  font-family: "Rubik";
+}
+
+@media only screen and (max-width: 992px) {
+  .col-stories {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .card-features {
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+/* End Success stories  */
+
+
+/* Start Testimonials  */
+
+#testimonials {
+  background-image: linear-gradient(rgba(13, 117, 202, 0.5),
+      var(--primary) 40%);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+::selection {
+  color: #925252;
+  background: #ff7979;
+}
+
+.testimonial-title {
+  color: var(--light);
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-top: 5%;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.wrapper .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: var(--secondary);
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.wrapper .row {
+  display: flex;
+}
+
+.wrapper .row-1 {
+  justify-content: flex-start;
+}
+
+.wrapper .row-2 {
+  justify-content: flex-end;
+}
+
+.wrapper .row section {
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+
+.wrapper .row section::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.row-1 section::before {
+  right: -7px;
+}
+
+.row-2 section::before {
+  left: -7px;
+}
+
+.row section .icon,
+.center-line .scroll-icon {
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--secondary);
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+
+.row-1 section .icon {
+  top: 15px;
+  right: -60px;
+}
+
+.row-2 section .icon {
+  top: 15px;
+  left: -60px;
+}
+
+.row section .details,
+.row section .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row section .details {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bottom {
+  font-family: "latoregular", sans-serif;
+  font-weight: 500;
+}
+
+.row section p {
+  margin: 10px 0 17px 0;
+  font-family: "latoregular", sans-serif;
+}
+
+.row section .bottom a:hover {
+  transform: scale(0.97);
+}
+
+.testi-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 790px) {
+  .wrapper .center-line {
+    left: 40px;
+  }
+
+  .wrapper .row {
+    margin: 30px 0 3px 60px;
+  }
+
+  .wrapper .row section {
+    width: 100%;
+  }
+
+  .row-1 section::before {
+    left: -7px;
+  }
+
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+
+  .wrapper .row {
+    margin: 10px 0;
+  }
+}
+
+/* Partnered NGo's  */
+.list {
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.list li {
+  list-style-type: none;
+  
+  width: 200px;
+  height: 200px;
+  opacity: .25;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  border-radius: 2px;
+  background: #9C89B8;
+  transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+  opacity: 1;
+}
+
+.list .prev,
+.list .next {
+  cursor: pointer;
+}
+
+.list .prev {
+  transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+  transform: translateX(220px) scale(.85);
+}
+
+.list .hide {
+  transform: translateX(-420px) scale(.85);
+}
+
+.list .new-next {
+  transform: translateX(420px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+  opacity: 0;
+  transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+  width: 270px;
+  height: 200px;
+  position: absolute;
+  background-color: green;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+}
