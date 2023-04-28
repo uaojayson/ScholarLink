@@ -139,6 +139,7 @@ h5 {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  font-size: 22px;
 }
 
 .cta-affiliate,
@@ -148,6 +149,7 @@ h5 {
   border-color: var(--secondary);
   margin-left: 2%;
   font-weight: 500;
+  font-size: 22px;
 }
 
 .gallery-images-box {
