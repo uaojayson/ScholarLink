@@ -613,7 +613,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  flex-wrap: wrap;
   background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
     url(assets/success.jpeg);
   background-position: center;
@@ -665,4 +665,3 @@ img {
     margin: 10px 0;
   }
 }
-
