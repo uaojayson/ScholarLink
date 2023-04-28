@@ -690,6 +690,7 @@ img {
 
 .featured-student {
   height: 40vh;
+  width: 100%;
   border-radius: 80%;
   border: solid 2px var(--secondary);
   clip-path: circle(200px at center);
