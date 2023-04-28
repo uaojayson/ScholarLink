@@ -563,6 +563,20 @@ img {
   font-family: "lato", sans-serif;
 }
 
+.cta-featured-mentor,
+.cta-featured-mentor:active,
+.cta-featured-mentor:visited {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 22px;
+  background-color: var(--secondary);
+}
+
+.cta-featured-mentor:hover {
+  background-color: var(--primary);
+  color: white;
+  border: solid 1px var(--secondary);
+}
 /* End: Mentor Section */
 
 /* Start Success stories  */
@@ -653,6 +667,30 @@ img {
   font-size: 16px;
   color: var(--light);
   font-family: "Rubik";
+}
+
+.success-footer {
+  margin-top: 3%;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+
+  font-family: "Rubik";
+}
+
+.cta-success-story,
+.cta-success-story:active,
+.cta-success-story:visited {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 22px;
+  background-color: var(--secondary);
+}
+
+.cta-success-story:hover {
+  background-color: var(--primary);
+  color: white;
+  border: solid 1px var(--secondary);
 }
 
 @media only screen and (max-width: 992px) {
