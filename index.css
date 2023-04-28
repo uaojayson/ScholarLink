@@ -508,7 +508,7 @@ img {
 }
 
 .content {
-  padding: 5px 20px;
+  padding: 40px 20px;
   text-align: center;
   transform: translateY(-450px);
   opacity: 0;
@@ -517,7 +517,7 @@ img {
 }
 .card-feature:hover > .content {
   opacity: 1;
-  transform: translateY(-300px);
+  transform: translateY(-350px);
 }
 .content h2 {
   color: #7f9ead;
