@@ -826,23 +826,20 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.row section .details .title {
+.row section .details {
   font-size: 22px;
   font-weight: 600;
 }
+
+.bottom {
+  font-family: "latoregular", sans-serif;
+  font-weight: 500;
+}
 .row section p {
   margin: 10px 0 17px 0;
+  font-family: "latoregular", sans-serif;
 }
-.row section .bottom a {
-  text-decoration: none;
-  background: #ff7979;
-  color: #fff;
-  padding: 7px 15px;
-  border-radius: 5px;
-  /* font-size: 17px; */
-  font-weight: 400;
-  transition: all 0.3s ease;
-}
+
 .row section .bottom a:hover {
   transform: scale(0.97);
 }
