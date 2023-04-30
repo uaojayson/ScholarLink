@@ -1,0 +1,634 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScholarLink</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--FONTAWESOME ICONS-->
+    <script
+      src="https://kit.fontawesome.com/3ce7f5ba6a.js"
+      crossorigin="anonymous"
+    ></script>
+
+       <!--CSS Links-->
+    <link rel="stylesheet" href="scholarship.css" />
+
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-4" href="http://127.0.0.1:5500/index.html">
+            <img src="scholarship-assets/logo.png" style="height: 60px" alt="owl" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-4" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/index.html"
+                  onclick="setActiveLink(this)"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a class="dropdown-item" href="#">Our Story</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">How It Works?</a></li>
+               
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Mentors
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Find A Mentor</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Become A Mentor</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Affiliates
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Affiliate List</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Become An Affiliate</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a
+                  class="nav-link active"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  
+                >
+                  Scholarships
+                </a>
+        
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Support Center
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">FAQs and Contacts</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Terms of Usage and Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+  
+            <button class="btn btn-login custom-border" type="submit">
+              Login
+            </button>
+            <button class="btn btn-signup custom-border mx-3" type="submit">
+              Signup
+            </button>
+          </div>
+        </div>
+      </nav>
+
+
+      <section id="private">
+        <div class = "main-container">
+            <h1>Privately Funded Scholarships</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, velit.</p>
+            <div class = "filter-container">
+                <div class = "category-head">
+                    <ul>
+                        <div class = "category-title actives" id = "all">
+                            <li>All</li>
+                            <span><i class = "fas fa-border-all"></i></span>
+                        </div>
+                        <div class = "category-title" id = "culture">
+                            <li>Culture, Arts, Humanities</li>
+                            <span><i class = "fas fa-theater-masks"></i></span>
+                        </div>
+                        <div class = "category-title" id = "politics">
+                            <li>Social Sciences and Politics</li>
+                            <span><i class = "fas fa-landmark"></i></span>
+                        </div>
+                        <div class = "category-title" id = "finance">
+                            <li>Accounting and Finance</li>
+                            <span><i class = "fas fa-chart-area"></i></span>
+                        </div>
+                        <div class = "category-title" id = "business">
+                            <li>Business, Management, Marketing</li>
+                            <span><i class = "fas fa-coins"></i></span>
+                        </div>
+                        <div class = "category-title" id = "sports">
+                            <li>STEM</li>
+                            <span><i class = "fas fa-running"></i></span>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class = "posts-collect">
+                    <div class = "posts-main-container">
+                        <!-- single post -->
+                        <div class = "all business">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Business, Management, Marketing</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all business">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Business, Management, Marketing</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all business">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Business, Management, Marketing</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Culture, Arts, Humanities</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Culture, Arts, Humanities</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Culture, Arts, Humanities</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all culture">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Culture, Arts, Humanities</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all finance">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Accounting and Finance</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all finance">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Accounting and Finance</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all finance">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Accounting and Finance</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Social Sciences and Politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Social Sciences and Politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Social Sciences and Politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all politics">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">Social Sciences and Politics</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all sports">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">STEM</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all sports">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">STEM</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all sports">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">STEM</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all sports">
+                            <div class = "post-img">
+                                <img src = "scholarship-assets/government.jpg" alt = "post">
+                                <span class = "category-name">STEM</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-calendar"></i>January 01, 2XXX</span>
+                                    <span>
+                                        <i class = "fas fa-comment"></i>34
+                                    </span>
+                                </div>
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <button type = "button" class = "read-btn">Apply Now</button>
+                        </div>
+                        <!-- end of single post -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+
+
+     
+
+      <section class="footer-clean">
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                <h3>About Us</h3>
+                <ul>
+                
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">How It Works?</a></li>
+              
+                </ul>
+              </div>
+  
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Our Affiliates</h3>
+                <ul>
+                  <li><a href="#">Affiliate List</a></li>
+                  <li><a href="#">Become An Affiliate</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Scholarships</h3>
+                <ul>
+                
+                  <li><a href="#">NGO Funded</a></li>
+                  <li><a href="#">Privately Funded</a></li>
+                  <li><a href="#">Government Funded</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 item social">
+                <a href="#"><i class="icon ion-social-facebook"></i></a
+                ><a href="#"><i class="icon ion-social-twitter"></i></a
+                ><a href="#"><i class="icon ion-social-snapchat"></i></a
+                ><a href="#"><i class="icon ion-social-instagram"></i></a>
+                <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+      
+
+  
+    <script src="scholarship.js"></script>
+
+    
+</body>
+</html>
