@@ -1,83 +1,39 @@
-const $ = selector => {
-  return document.querySelector(selector);
-};
+const slider = document.querySelector(".items");
+		const slides = document.querySelectorAll(".item");
+		const button = document.querySelectorAll(".button");
 
-function next() {
-  if ($(".hide")) {
-    $(".hide").remove(); 
-  }
+		let current = 0;
+		let prev = 4;
+		let next = 1;
 
-  /* Step */
+		for (let i = 0; i < button.length; i++) {
+			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+		}
 
-  if ($(".prev")) {
-    $(".prev").classList.add("hide");
-    $(".prev").classList.remove("prev");
-  }
+		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-  $(".act").classList.add("prev");
-  $(".act").classList.remove("act");
+		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
 
-  $(".next").classList.add("act");
-  $(".next").classList.remove("next");
+		const gotoNum = number => {
+			current = number;
+			prev = current - 1;
+			next = current + 1;
 
-  /* New Next */
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].classList.remove("active");
+				slides[i].classList.remove("prev");
+				slides[i].classList.remove("next");
+			}
 
-  $(".new-next").classList.remove("new-next");
+			if (next == 5) {
+				next = 0;
+			}
 
-  const addedEl = document.createElement('li');
+			if (prev == -1) {
+				prev = 4;
+			}
 
-  $(".list").appendChild(addedEl);
-  addedEl.classList.add("next","new-next");
-}
-
-function prev() {
-  $(".new-next").remove();
-    
-  /* Step */
-
-  $(".next").classList.add("new-next");
-
-  $(".act").classList.add("next");
-  $(".act").classList.remove("act");
-
-  $(".prev").classList.add("act");
-  $(".prev").classList.remove("prev");
-
-  /* New Prev */
-
-  $(".hide").classList.add("prev");
-  $(".hide").classList.remove("hide");
-
-  const addedEl = document.createElement('li');
-
-  $(".list").insertBefore(addedEl, $(".list").firstChild);
-  addedEl.classList.add("hide");
-}
-
-slide = element => {
-  /* Next slide */
-  
-  if (element.classList.contains('next')) {
-    next();
-    
-  /* Previous slide */
-    
-  } else if (element.classList.contains('prev')) {
-    prev();
-  }
-}
-
-const slider = $(".list"),
-      swipe = new Hammer($(".swipe"));
-
-slider.onclick = event => {
-  slide(event.target);
-}
-
-swipe.on("swipeleft", (ev) => {
-  next();
-});
-
-swipe.on("swiperight", (ev) => {
-  prev();
-});
+			slides[current].classList.add("active");
+			slides[prev].classList.add("prev");
+			slides[next].classList.add("next");
+		}

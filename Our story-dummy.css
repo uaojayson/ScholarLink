@@ -385,67 +385,189 @@ body {
 }
 
 /* Partnered NGo's  */
-.list {
-  height: 200px;
+.partners{
+height: 300px;
+margin-bottom: 100px;
+}
+.FP{
+  text-align: center;
+  color:var(--grey);
+  font-family: "Montserrat", sans-serif;
+}
+.items {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%);
+  user-select: none;
 }
 
-.list li {
-  list-style-type: none;
-  
-  width: 200px;
-  height: 200px;
-  opacity: .25;
+.items .item {
   position: absolute;
+  top: 50%;
   left: 50%;
-  margin-left: -100px;
-  border-radius: 2px;
-  background: #9C89B8;
-  transition: transform 1s, opacity 1s;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: -1;
+  opacity: 0;
 }
 
-.list .act {
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item.active {
+  opacity: 1;
+  z-index: 99;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+
+.item.prev {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(-125%, -50%);
+}
+
+.item.next {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(25%, -50%);
+}
+
+.items .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 275px;
+  z-index: 100;
+}
+
+.button-container .button {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
   opacity: 1;
 }
 
-.list .prev,
-.list .next {
-  cursor: pointer;
-}
-
-.list .prev {
-  transform: translateX(-220px) scale(.85);
-}
-
-.list .next {
-  transform: translateX(220px) scale(.85);
-}
-
-.list .hide {
-  transform: translateX(-420px) scale(.85);
-}
-
-.list .new-next {
-  transform: translateX(420px) scale(.85);
-}
-
-.list .hide,
-.list .new-next {
-  opacity: 0;
-  transition: opacity .5s, transform .5s;
-}
-
-.swipe {
-  width: 270px;
-  height: 200px;
+.button-container .button:before {
+  content: "";
   position: absolute;
-  background-color: green;
-  border-radius: 2px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
 }
+
+.button-container .button:nth-child(1) {
+  float: left;
+}
+
+.button-container .button:nth-child(2) {
+  float: right;
+}
+
+/* Footer */
+.footer-clean {
+  padding: 50px 0;
+  background-color: #fff;
+  color: #4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity: 1;
+}
+
+.footer-clean .item.social {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align: center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .footer-clean .item.social > a {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-clean .item.social > a {
+    margin-top: 10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
