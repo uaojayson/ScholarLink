@@ -195,6 +195,11 @@ body {
   }
 }
 /*Our Team */
+.Team{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--light);
+}
 
 /* Foot */
 .footer-clean {
