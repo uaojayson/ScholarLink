@@ -27,7 +27,7 @@
   <!-- Start: Navbar  -->
   <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand mx-4" href="index-dummy.html">
+      <a class="navbar-brand mx-4" href="http://127.0.0.1:5500/index.html">
         <img src="assets/logo.png" style="height: 60px" alt="owl" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -37,8 +37,7 @@
       <div class="collapse navbar-collapse mx-4" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index-dummy.html"
-              onclick="setActiveLink(this)">Home</a>
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html" onclick="setActiveLink(this)">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" onclick="setActiveLink(this)" role="button"
@@ -318,29 +317,80 @@
   <!-- End: Why Choose Scholarlink   -->
 
   <!-- Start: Partner NGO'S  -->
-  <section>
-    <h1 class="Story">Our Featured Partners </h1>
-    <div>
-      <ul class="list">
-        <li class="hide"></li>
-        <li class="prev"></li>
-        <li class="act"></li>
-        <li class="next"></li>
-        <li class="next new-next"></li>
-      </ul>
-  
-      <div class="swipe"></div>
-  
+  <section class="partners ">
+    <h1 class="FP"> Our featured Partners </h1>
+    <div class="items" style="position: relative;">
+      <div class="item active">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class=" item next">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class="item">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class="item">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class="item">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class="item">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class="item prev">
+        <img src="http://via.placeholder.com/500x500">
+      </div>
+      <div class="button-container">
+        <div class="button"><i class="fas fa-angle-left"></i></div>
+        <div class="button"><i class="fas fa-angle-right"></i></div>
+      </div>
     </div>
-    
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
   </section>
   <!-- End: Partner NGO'S  -->
 
   <!-- Start:Footer -->
-  <Section></Section>
+  <section class="footer-clean">
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-4 col-md-3 item">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Mission, Vision, Core Values</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">How It Works?</a></li>
+              <li><a href="#">The Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Our Affiliates</h3>
+            <ul>
+              <li><a href="#">Affiliate List</a></li>
+              <li><a href="#">Become An Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item">
+            <h3>Scholarships and Grants</h3>
+            <ul>
+              <li><a href="#">Privately Funded</a></li>
+              <li><a href="#">NGO Funded</a></li>
+              <li><a href="#">Government Funded</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 item social">
+            <a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+              href="#"><i class="icon ion-social-instagram"></i></a>
+            <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
   <!-- End:Footer -->
-  <script src="index-dummy.js"></script>
+  <script src="index.js"></script>
   <script src="Our Story-dummy.js"></script>
 </body>
 
