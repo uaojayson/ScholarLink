@@ -97,18 +97,11 @@ body {
   justify-content: space-between;
 }
 
-.name {
-  color: #0a2647;
-  padding-top: 1%;
-  font-size: 30px;
-  font-family: "lato", sans-serif;
-  font-weight: 500;
-}
 .card {
   height: 280px;
   max-width: 350px;
   margin: 0 20px;
-  background: white;
+  background: #0a2647;
   transition: 0.4s;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -132,7 +125,8 @@ body {
 .card .top-text .name {
   font-size: 25px;
   font-weight: 600;
-  color: #202020;
+  color: white;
+  font-family: "lato", sans-serif;
 }
 .card .top-text p {
   font-size: 20px;
