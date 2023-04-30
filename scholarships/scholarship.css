@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+:root {
+  --primary: #0a2647;
+  --secondary: #ffb100;
+  --dark-1: #161819;
+  --dark-2: #252728;
+  --grey: #aaa;
+  --light: #fff;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: var(--primary);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* Start: Navigation Bar */
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--secondary);
+  width: 93%;
+  transition: border-bottom 0.2s ease-in-out;
+  /* Change the duration and timing function to your preference */
+}
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary);
+  width: 93%;
+  transition: border-bottom 0.2s ease-in-out;
+  /* Change the duration and timing function to your preference */
+}
+.custom-border {
+  border-color: #0a2647;
+  color: #0a2647;
+  font-weight: 500;
+}
+.btn-login,
+.btn-login:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.btn-signup:hover {
+  background-color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+/* End: Navigation Bar */
