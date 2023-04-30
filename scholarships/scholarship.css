@@ -147,7 +147,7 @@ body {
   visibility: visible;
 }
 .card .bottom-text .text {
-  text-align: justify;
+  text-align: center;
 }
 .card .bottom-text .btn {
   margin: 10px 0;
