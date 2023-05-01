@@ -661,6 +661,12 @@ textarea.input {
 
 #terms {
   font-family: "Rubik", sans-serif;
+  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
+    url(/assets/success.jpeg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
 }
 
 .flex_align_justify {
@@ -671,6 +677,7 @@ textarea.input {
 
 ul.no-bullets {
   list-style-type: none;
+  font-family: "Lato", sans-serif;
 }
 
 .wrapper {
@@ -682,7 +689,7 @@ ul.no-bullets {
   width: 800px;
   max-width: 100%;
   height: 450px;
-  background: var(--white);
+  background: var(--light);
   display: flex;
   border-radius: 3px;
   overflow: hidden;
@@ -690,7 +697,7 @@ ul.no-bullets {
 
 .tc_wrap .tabs_list {
   width: 250px;
-  background: var(--tabs-list-bg-clr);
+  background: var(--secondary);
   height: 100%;
 }
 
@@ -702,13 +709,14 @@ ul.no-bullets {
 
 .tc_wrap .tabs_content .tab_head,
 .tc_wrap .tabs_content .tab_foot {
-  color: var(--primary-clr);
+  color: var(--primary);
   padding: 25px 0;
   height: 70px;
 }
 
 .tc_wrap .tabs_content .tab_head {
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .tc_wrap .tabs_content .tab_body {
@@ -744,7 +752,7 @@ ul.no-bullets {
 
 .tc_wrap .tabs_list ul li.active,
 .tc_wrap .tabs_list ul li:hover {
-  color: var(--primary-clr);
+  color: var(--light);
 }
 
 .tc_wrap .tabs_list ul li.active:before {
@@ -752,13 +760,18 @@ ul.no-bullets {
 }
 
 .tc_wrap .tabs_content .tab_body .tab_item h3 {
-  padding-top: 10px;
+  padding-top: 20px;
   margin-bottom: 10px;
-  color: var(--primary-clr);
+  color: var(--primary);
+  font-family: 'Lato', sans-serif;';
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .tc_wrap .tabs_content .tab_body .tab_item p {
   margin-bottom: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
 }
 
 .tc_wrap .tabs_content .tab_body .tab_item.active {
