@@ -127,6 +127,7 @@ body {
   color: inherit;
   opacity: 0.75;
   padding-top: 2%;
+  padding-left: 3%;
 }
 
 .footer-clean .item.social > a:hover {
@@ -157,8 +158,8 @@ body {
 #faqs {
   padding-top: 10%;
   background-image: linear-gradient(
-    var(--primary) 40%,
-    rgba(33, 150, 243, 0.5)
+    rgba(33, 150, 243, 0.5),
+    var(--primary) 40%
   );
   background-position: center;
   background-size: cover;
@@ -274,21 +275,19 @@ body {
 /* Contact */
 
 #contact {
-  background: linear-gradient(rgba(33, 150, 243, 0.5), var(--primary) 40%);
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
 }
 
 .contact {
   position: relative;
-  width: 100%;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 80%;
   padding: 2rem;
-  background: linear-gradient(rgba(33, 150, 243, 0.5), var(--primary) 40%);
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-bottom: 2%;
 }
 
 .form {
@@ -402,10 +401,10 @@ textarea.input {
 
 .btn-contact {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
+  background-color: var(--primary);
   border: 2px solid var(--primary);
   font-size: 0.95rem;
-  color: var(--primary);
+  color: var(--light);
   line-height: 1;
 
   outline: none;
@@ -415,8 +414,9 @@ textarea.input {
 }
 
 .btn-contact:hover {
-  background-color: transparent;
-  color: #fff;
+  background-color: var(--light);
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 .input-container span {
@@ -605,7 +605,7 @@ textarea.input {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .contact {
     padding: 1.5rem;
   }
 
