@@ -51,31 +51,50 @@ body {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-
 .btn-signup:hover {
   background-color: var(--secondary);
   background-color: var(--secondary);
   color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 /* End: Navigation Bar */
 
 /* Start:How We Started  */
-.Shared-stories{
+.Shared-stories {
   text-align: center;
   width: 100%;
   padding-top: 9%;
   padding-bottom: 3%;
   background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
-} 
-.Story{
+}
+.Story {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   color: var(--light);
@@ -83,14 +102,14 @@ body {
   text-align: center;
 }
 
-.bg-story{
+.bg-story {
   font-family: "lato", sans-serif;
   font-size: 24px;
   color: var(--light);
   font-weight: 300;
   text-align: center;
 }
-.sh-contents{
+.sh-contents {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   color: var(--greyt);
@@ -149,7 +168,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  background-image: linear-gradient(
+    var(--primary) 40%,
+    rgba(33, 150, 243, 0.5)
+  );
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -179,7 +201,6 @@ body {
 }
 
 .student-name {
-  
   font-family: "lato", sans-serif;
 }
 
@@ -203,12 +224,13 @@ body {
 
 /* End Success stories  */
 
-
 /* Start Testimonials  */
 
 #testimonials {
-  background-image: linear-gradient(rgba(13, 117, 202, 0.5),
-      var(--primary) 40%);
+  background-image: linear-gradient(
+    rgba(13, 117, 202, 0.5),
+    var(--primary) 40%
+  );
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -372,7 +394,6 @@ body {
 }
 
 @media (max-width: 440px) {
-
   .wrapper .center-line,
   .row section::before,
   .row section .icon {
@@ -385,13 +406,13 @@ body {
 }
 
 /* Partnered NGo's  */
-.partners{
-height: 300px;
-margin-bottom: 100px;
+.partners {
+  height: 300px;
+  margin-bottom: 100px;
 }
-.FP{
+.FP {
   text-align: center;
-  color:var(--grey);
+  color: var(--grey);
   font-family: "Montserrat", sans-serif;
 }
 .items {

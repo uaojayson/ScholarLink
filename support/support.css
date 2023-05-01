@@ -50,17 +50,38 @@ body {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .btn-signup:hover {
   background-color: var(--secondary);
   background-color: var(--secondary);
   color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 /* End: Navigation Bar */
 
@@ -183,13 +204,11 @@ body {
 }
 
 .section h1 {
-  font-size: 36px;
+ 
   text-align: center;
   margin-bottom: 40px;
-  letter-spacing: 2px;
-
   color: var(--light);
-  font-family: "Montserrat", sans-serif;
+  font-family: ""Montserrat", sans-serif";
   font-size: 36px;
 }
 
@@ -405,17 +424,18 @@ textarea.input {
 }
 
 .btn-contact {
-  padding: 0.6rem 1.3rem;
+  
   background-color: var(--primary);
   border: 2px solid var(--primary);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--light);
-  line-height: 1;
-
   outline: none;
-  cursor: pointer;
-  transition: 0.3s;
   margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .btn-contact:hover {
@@ -678,6 +698,7 @@ textarea.input {
 ul.no-bullets {
   list-style-type: none;
   font-family: "Lato", sans-serif;
+  color: var(--light);
 }
 
 .wrapper {
@@ -697,7 +718,7 @@ ul.no-bullets {
 
 .tc_wrap .tabs_list {
   width: 250px;
-  background: var(--secondary);
+  background: var(--primary);
   height: 100%;
 }
 
@@ -745,14 +766,14 @@ ul.no-bullets {
   right: -20px;
   width: 2px;
   height: 100%;
-  background: var(--primary-clr);
+  background: var(--secondary);
   opacity: 0;
   transition: all 0.5s ease;
 }
 
 .tc_wrap .tabs_list ul li.active,
 .tc_wrap .tabs_list ul li:hover {
-  color: var(--light);
+  color: var(--secondary);
 }
 
 .tc_wrap .tabs_list ul li.active:before {

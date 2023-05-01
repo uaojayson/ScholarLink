@@ -50,17 +50,38 @@ body {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .btn-signup:hover {
   background-color: var(--secondary);
   background-color: var(--secondary);
   color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 /* End: Navigation Bar */
 
@@ -135,11 +156,18 @@ h5 {
 .cta-mentor:hover {
   background-color: var(--secondary);
   color: #fff;
-  border-radius: 5px;
+
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
   font-size: 22px;
+  outline: none;
+  margin: 0;
+
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .cta-affiliate,
@@ -150,6 +178,12 @@ h5 {
   margin-left: 2%;
   font-weight: 500;
   font-size: 22px;
+  outline: none;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .gallery-images-box {
@@ -568,6 +602,13 @@ img {
   margin-bottom: 5%;
   font-size: 22px;
   background-color: var(--secondary);
+  outline: none;
+  margin: 0;
+
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .cta-featured-mentor:hover {
@@ -683,6 +724,13 @@ img {
   margin-bottom: 5%;
   font-size: 22px;
   background-color: var(--secondary);
+  outline: none;
+  margin: 0;
+
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .cta-success-story:hover {

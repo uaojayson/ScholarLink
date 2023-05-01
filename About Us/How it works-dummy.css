@@ -51,19 +51,38 @@ body {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-
 .btn-signup:hover {
   background-color: var(--secondary);
   background-color: var(--secondary);
   color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 /* End: Navigation Bar */
@@ -87,7 +106,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
   cursor: pointer;
   border: none;
@@ -95,7 +114,7 @@ body {
 }
 
 .arrow:hover {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .arrow.prev {
@@ -139,7 +158,7 @@ body {
   scroll-snap-align: start;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 8px 8px 24px rgba(0, 0, 0, .1);
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .card-item img {
@@ -148,7 +167,6 @@ body {
   width: 100%;
   height: 300px;
   object-fit: contain;
-
 }
 
 .card-info {
@@ -169,8 +187,6 @@ body {
 }
 
 /* end: Slider */
-
-
 
 @media screen and (max-width: 575px) {
   .arrow {
@@ -195,7 +211,7 @@ body {
   }
 }
 /*Our Team */
-.Team{
+.Team {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: var(--light);

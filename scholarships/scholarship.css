@@ -45,17 +45,38 @@ body {
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .btn-signup:hover {
   background-color: var(--secondary);
   background-color: var(--secondary);
   color: var(--primary);
+  outline: none;
+  margin: 0;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 /* End: Navigation Bar */
 
@@ -162,6 +183,14 @@ body {
   display: inline-flex;
   transition: 0.2s;
   font-size: 18px;
+  outline: none;
+  margin: 0;
+
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-align: center;
 }
 .card .bottom-text .btn a:hover {
   transform: scale(1);
@@ -179,6 +208,13 @@ body {
   padding: 5px 8px;
   border-radius: 3px;
   font-size: 22px;
+  outline: none;
+  margin: 0;
+
+  padding: 5px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 1200px) {
   #scholarships {
@@ -425,6 +461,7 @@ img {
   border: 1px solid #292929;
   background: var(--secondary);
   margin-bottom: 40px;
+  border-radius: 25px;
 }
 
 .read-btn:hover {
