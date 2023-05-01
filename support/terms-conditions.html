@@ -2,7 +2,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ScholarLink</title>
+    <title>Support Center</title>
 
     <link
       rel="stylesheet"
@@ -33,7 +33,7 @@
     ></script>
 
        <!--CSS Links-->
-    <link rel="stylesheet" href="scholarship.css" />
+    <link rel="stylesheet" href="support.css" />
 
 
     <!-- favicon  -->
@@ -49,7 +49,7 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand mx-4" href="http://127.0.0.1:5500/index.html">
-            <img src="scholarship-assets/logo.png" style="height: 60px" alt="owl" />
+            <img src="support-assets/logo.png" style="height: 60px" alt="owl" />
           </a>
           <button
             class="navbar-toggler"
@@ -86,9 +86,9 @@
                 </a>
                 <ul class="dropdown-menu">
                   
-                  <li><a class="dropdown-item" href="/About Us/Our_Story-dummy.html">Our Story</a></li>
+                  <li><a class="dropdown-item" href="./About Us/Our_Story-dummy.html">Our Story</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="/About Us/How_It_Works-dummy.html">How It Works?</a></li>
+                  <li><a class="dropdown-item" href="#">How It Works?</a></li>
                
                 </ul>
               </li>
@@ -131,8 +131,8 @@
               </li>
               <li class="nav-item ">
                 <a
-                  class="nav-link active"
-                  href="#"
+                  class="nav-link"
+                  href="/scholarships/scholarship.html"
                   onclick="setActiveLink(this)"
                   
                 >
@@ -143,7 +143,7 @@
   
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle active"
                   href="#"
                   onclick="setActiveLink(this)"
                   role="button"
@@ -153,10 +153,10 @@
                   Support Center
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/support/support.html">FAQs and Contacts</a></li>
+                  <li><a class="dropdown-item" href="support.html">FAQs and Contacts</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="/support/terms-conditions.html"
+                    <a class="dropdown-item" href="#terms"
                       >Terms of Usage and Privacy Policy</a
                     >
                   </li>
@@ -175,88 +175,68 @@
       </nav>
 
 
-      <section id="scholarships">
-        <div class="scholarships-banner">
-          <h1 style="color: white;" class="banner-title">Scholarships and Grants</h1>
-          <h3 style="color: white;" class="banner-tagline">Scholarships Made Simple: Streamline Your Search Today, Find Your Dream Scholarship Tomorrow.
-          </h3>
-        </div>
-  
-        <div class="container container-scholarships">
+     
 
-          <div class="card">
-             <div class="img">
-                <img src="scholarship-assets/ngo.avif">
-             </div>
-             <div class="top-text">
-                <div class="name">
-                  NGO Funded
+        <section id="terms">
+            <div class="wrapper flex_align_justify">
+                <div class="tc_wrap">
+                    <div class="tabs_list">
+                      <ul class="no-bullets">
+                        <li data-tc="tab_item_1" class="active">Terms of use</li>
+                        <li data-tc="tab_item_2">Intellectual property rights</li>
+                        <li data-tc="tab_item_3">Prohibited activities</li>
+                        <li data-tc="tab_item_4">Termination clause</li>
+                        <li data-tc="tab_item_5">Governing law</li>
+                      </ul>
+                    </div>
+                    <div class="tabs_content">
+                       <div class="tab_head">
+                         <h2>Terms & Conditions</h2>
+                       </div>
+                       <div class="tab_body">
+                         <div class="tab_item tab_item_1">
+                             <h3>Terms of use</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+                         </div>
+                         <div class="tab_item tab_item_2" style="display: none;">
+                             <h3>Intellectual property rights</h3>
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia odit neque a natus fuga incidunt, facilis, consequatur ducimus vitae consectetur reiciendis tempora explicabo animi quis laborum possimus totam voluptatum illum.</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+                         </div>
+                         <div class="tab_item tab_item_3"  style="display: none;">
+                             <h3>Prohibited activities</h3>
+                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sit commodi esse enim? Cum tempore deserunt numquam molestias. Pariatur, minima consequatur nam exercitationem explicabo porro quibusdam. Excepturi, voluptatibus repellendus. Provident!</p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi?</p>
+                         </div>
+                         <div class="tab_item tab_item_4"  style="display: none;">
+                             <h3>Termination clause</h3>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae ipsa, enim aspernatur ducimus vero! Repellendus exercitationem dolore, voluptatibus consectetur facere eveniet in, corporis, nostrum animi unde recusandae repudiandae. Excepturi.</p>
+                         </div>
+                         <div class="tab_item tab_item_5"  style="display: none;">
+                             <h3>Governing law</h3>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias nemo eius aspernatur doloremque laboriosam velit, consequatur nesciunt, ipsum facere autem, dicta quam consectetur! Nostrum quae odit adipisci omnis asperiores!</p>
+                         </div>
+                       </div>
+                       <div class="tab_foot flex_align_justify">
+                         <button class="decline">
+                           Decline
+                         </button>
+                         <button class="agree">
+                           Agree
+                         </button>
+                       </div>
+                    </div>
                 </div>
-           
              </div>
-             <div class="bottom-text">
-                <div class="text">
-                   NGO Funded Scholarships  are designed to help underprivileged and deserving students to access quality education, regardless of their economic background. NGOs offer various scholarship programs that cover tuition fees, books, and other academic-related expenses. 
-                </div>
-                <div class="btn">
-                   <a href="ngo.html">See More</a>
-                </div>
-             </div>
-          </div>
-          <div class="card">
-             <div class="img">
-                <img src="scholarship-assets/private.jpg">
-             </div>
-             <div class="top-text">
-                <div class="name">
-                  Privately Funded
-                </div>
-            
-             </div>
-             <div class="bottom-text">
-                <div class="text">
-                  Privately funded scholarships provide financial assistance to students based on various criteria, such as academic achievement, financial need, or community involvement. These scholarships are usually provided by private individuals, companies, or foundations. 
-                </div>
-                <div class="btn">
-                   <a href="private.html">See More</a>
-                </div>
-             </div>
-          </div>
-          <div class="card">
-             <div class="img">
-                <img src="scholarship-assets/government.jpg">
-             </div>
-             <div class="top-text">
-                <div class="name">
-                   Government Funded
-                </div>
-              
-             </div>
-             <div class="bottom-text">
-                <div class="text">
-                  Government-funded scholarships provide financial assistance to students based on their academic merit or financial need. These scholarships are often provided by the government to promote education and support students who may not have the financial resources to pursue higher education. 
-                </div>
-                <div class="btn">
-                   <a href="#">See More</a>
-                </div>
-             </div>
-          </div>
 
-       
-       </div>
-       <div class="scholarships-footer">
+        </section>
 
-        <h3 style="color: white;" class="banner-tagline"> <i
-          class="fa1 fa fa-quote-left"
-          aria-hidden="true"
-          style="font-size: 45px; color: #ffb100"
-        ></i>Join ScholarLInk  now and become part of a thriving network of driven students, supported by a wealth of scholarship opportunities and resources.
-        </h3>
-        <div class="btn ">
-          <a href="#" class="btn-cta">SIGN-UP NOW</a>
-       </div>
-      </div>
-      </section>
+   
+
 
       <section class="footer-clean">
         <footer>
@@ -300,9 +280,10 @@
         </footer>
       </section>
       
+      
 
   
-    <script src="scholarship.js"></script>
+    <script src="support.js"></script>
 
     
 </body>
