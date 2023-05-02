@@ -23,7 +23,8 @@
 body,
 input {
   font-family: "Urbanist", sans-serif;
-  background-color: var(--primary);
+  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
+    url(assets/background.jpg);
   overflow-x: hidden;
 }
 
@@ -165,9 +166,10 @@ select:focus {
   border-color: #4481eb;
 }
 
-.btn {
+.btn,
+.btn:hover {
   width: 150px;
-  background-color: #5995fd;
+  background-color: var(--primary);
   border: none;
   outline: none;
   height: 49px;
@@ -180,9 +182,6 @@ select:focus {
   transition: 0.5s;
 }
 
-.btn:hover {
-  background-color: #4d84e2;
-}
 .panels-container {
   position: absolute;
   height: 100%;
@@ -201,7 +200,7 @@ select:focus {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(-45deg, var(--primary) 0%, #04befe 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -252,7 +251,7 @@ select:focus {
 .btn.transparent {
   margin: 0;
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid var(--secondary);
   width: 130px;
   height: 41px;
   font-weight: 600;
