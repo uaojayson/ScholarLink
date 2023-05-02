@@ -341,3 +341,20 @@ const carousel = new CardCarousel(cardsContainer);
 
 
 
+// Get the login and signup buttons
+const loginBtn = document.querySelector('.btn-login');
+const signupBtn = document.querySelector('.btn-signup');
+
+// Add click event listeners to the buttons
+loginBtn.addEventListener('click', () => {
+  // Redirect to the login page
+  window.location.href = 'http://127.0.0.1:5500/login-signup/login.html?login-type=student#';
+});
+
+signupBtn.addEventListener('click', () => {
+  // Redirect to the signup page
+  window.location.href = 'http://127.0.0.1:5500/login-signup/login.html?login-type=student#';
+});
+
+
+

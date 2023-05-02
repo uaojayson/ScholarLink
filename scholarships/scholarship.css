@@ -41,18 +41,7 @@ body {
   transition: border-bottom 0.2s ease-in-out;
   /* Change the duration and timing function to your preference */
 }
-.custom-border {
-  border-color: #0a2647;
-  color: #0a2647;
-  font-weight: 500;
-  outline: none;
-  margin: 0;
-  width: 125px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
+
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
@@ -60,24 +49,13 @@ body {
   border-color: var(--primary);
   outline: none;
   margin: 0;
-  width: 125px;
-  padding: 6px 10px;
-  border-radius: 25px;
+  padding: 8px 12px;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
 }
-.btn-signup:hover {
-  background-color: var(--secondary);
-  background-color: var(--secondary);
-  color: var(--primary);
-  outline: none;
-  margin: 0;
-  width: 125px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
+
 /* End: Navigation Bar */
 
 /* Start: Scholarships*/

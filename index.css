@@ -40,18 +40,10 @@ body {
   transition: border-bottom 0.2s ease-in-out;
   /* Change the duration and timing function to your preference */
 }
-.custom-border {
-  border-color: #0a2647;
-  color: #0a2647;
-  font-weight: 500;
-  outline: none;
-  margin: 0;
-  width: 125px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.5s ease;
+.nav-link {
+  color: var(--primary);
 }
+
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
@@ -59,24 +51,13 @@ body {
   border-color: var(--primary);
   outline: none;
   margin: 0;
-  width: 125px;
-  padding: 6px 10px;
-  border-radius: 25px;
+  padding: 8px 12px;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
 }
-.btn-signup:hover {
-  background-color: var(--secondary);
-  background-color: var(--secondary);
-  color: var(--primary);
-  outline: none;
-  margin: 0;
-  width: 125px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
+
 /* End: Navigation Bar */
 
 /* Start: Hero Gallery Section */
@@ -156,16 +137,13 @@ h5 {
 .cta-mentor:hover {
   background-color: var(--secondary);
   color: #fff;
-
   border-color: #0a2647;
   color: #0a2647;
   font-weight: 500;
   font-size: 22px;
   outline: none;
   margin: 0;
-
   padding: 5px 10px;
-  border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -181,7 +159,6 @@ h5 {
   outline: none;
   margin: 0;
   padding: 5px 10px;
-  border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -604,9 +581,7 @@ img {
   background-color: var(--secondary);
   outline: none;
   margin: 0;
-
   padding: 5px 10px;
-  border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -726,9 +701,7 @@ img {
   background-color: var(--secondary);
   outline: none;
   margin: 0;
-
   padding: 5px 10px;
-  border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
