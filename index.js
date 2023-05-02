@@ -10,7 +10,7 @@ function setActiveLink(link) {
   }
 
 
-  const cardsContainer = document.querySelector(".card-carousel");
+const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(
   ".card-carousel + .card-controller"
 );
