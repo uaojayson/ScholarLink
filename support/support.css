@@ -17,11 +17,10 @@
   --dark-2: #252728;
   --grey: #aaa;
   --light: #fff;
-  --primary-clr: #6c00f9;
   --white: #fff;
   --text-clr: #464646;
   --tabs-list-bg-clr: #dfc8fd;
-  --btn-hvr: #4e03b0;
+
 }
 
 body {
@@ -46,18 +45,11 @@ body {
   transition: border-bottom 0.2s ease-in-out;
   /* Change the duration and timing function to your preference */
 }
-.custom-border {
-  border-color: #0a2647;
-  color: #0a2647;
-  font-weight: 500;
-  outline: none;
-  margin: 0;
-  width: 125px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.5s ease;
+
+.nav-link {
+  color: var(--primary);
 }
+
 .btn-login,
 .btn-login:hover {
   background-color: var(--primary);
@@ -65,23 +57,11 @@ body {
   border-color: var(--primary);
   outline: none;
   margin: 0;
-  width: 125px;
-  padding: 6px 10px;
-  border-radius: 25px;
+  padding: 8px 12px;
   cursor: pointer;
   transition: all 0.5s ease;
-}
-.btn-signup:hover {
-  background-color: var(--secondary);
-  background-color: var(--secondary);
-  color: var(--primary);
-  outline: none;
-  margin: 0;
-  width: 125px;
-  padding: 5px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.5s ease;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
 }
 /* End: Navigation Bar */
 
@@ -179,7 +159,7 @@ body {
   opacity: 0.6;
 }
 
-/* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
+/* Credits to https://epicbootstrap.com/snippets/footer-with-columns */
 
 #faqs {
   padding-top: 10%;
@@ -231,7 +211,7 @@ body {
   margin-bottom: 50px;
   padding: 25px 50px;
   background-color: var(--primary);
-  box-shadow: 1px 1px 1px 1px var(--secondary);
+  box-shadow: 0.3px 0.3px 0.3px 0.3px var(--light);
   border-radius: 10px;
 }
 
@@ -242,10 +222,10 @@ body {
 }
 
 .question h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--secondary);
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
+
 }
 
 .question i {
@@ -327,13 +307,13 @@ body {
 }
 
 .contact-form {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, var(--secondary));
   position: absolute;
 }
 
@@ -356,7 +336,7 @@ body {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -370,7 +350,7 @@ form {
 }
 
 .title {
-  color: var(--primary);
+  color: var(--light);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -388,7 +368,7 @@ form {
   border: 2px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
-  color: var(--primary);
+  color: var(--light);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -410,7 +390,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: var(--primary);
+  color: var(--light);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -425,10 +405,10 @@ textarea.input {
 
 .btn-contact {
   
-  background-color: var(--primary);
-  border: 2px solid var(--primary);
+  background-color: var(--light);
+  border: 2px solid var(--secondary);
   font-size: 1rem;
-  color: var(--light);
+  color: var(--primary);
   outline: none;
   margin: 0;
   width: 125px;
@@ -464,7 +444,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -519,6 +499,7 @@ textarea.input {
 
 .social-media {
   padding: 2rem 0 0 0;
+  text-align: left;
 }
 
 .social-media p {
@@ -565,7 +546,8 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, var(--secondary), #ac9309);
+  background: linear-gradient(to bottom, var(--primary), var (var(--primary)));
+  border: solid 2px var(--secondary);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -580,6 +562,7 @@ textarea.input {
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
+  border: solid 2px var(--secondary);
 }
 
 .square {
