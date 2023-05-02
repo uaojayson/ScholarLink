@@ -47,6 +47,11 @@ body {
   /* Change the duration and timing function to your preference */
 }
 
+.nav-link {
+  color: var(--primary);
+}
+
+
 
 .btn-login,
 .btn-login:hover {
