@@ -214,7 +214,7 @@ body {
   margin-bottom: 50px;
   padding: 25px 50px;
   background-color: var(--primary);
-  box-shadow: 1px 1px 1px 1px var(--secondary);
+  box-shadow: 0.3px 0.3px 0.3px 0.3px var(--light);
   border-radius: 10px;
 }
 
@@ -225,10 +225,10 @@ body {
 }
 
 .question h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--secondary);
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
+
 }
 
 .question i {
@@ -310,13 +310,13 @@ body {
 }
 
 .contact-form {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, var(--secondary));
   position: absolute;
 }
 
@@ -353,7 +353,7 @@ form {
 }
 
 .title {
-  color: var(--primary);
+  color: var(--light);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -371,7 +371,7 @@ form {
   border: 2px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
-  color: var(--primary);
+  color: var(--light);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -393,7 +393,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: var(--primary);
+  color: var(--light);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -408,10 +408,10 @@ textarea.input {
 
 .btn-contact {
   
-  background-color: var(--primary);
-  border: 2px solid var(--primary);
+  background-color: var(--light);
+  border: 2px solid var(--secondary);
   font-size: 1rem;
-  color: var(--light);
+  color: var(--primary);
   outline: none;
   margin: 0;
   width: 125px;
@@ -447,7 +447,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   top: 50%;
   transform: translateY(-50%);
 }
