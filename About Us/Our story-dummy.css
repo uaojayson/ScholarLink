@@ -60,6 +60,8 @@ body {
 }
 /* End: Navigation Bar */
 
+
+
 /* Start:How We Started  */
 .Shared-stories {
   text-align: center;
@@ -98,25 +100,11 @@ body {
   text-align: center;
 }
 
-.student-name {
-  color: var(--secondary);
-  font-family: 'Lato', sans-serif;';
-  font-weight: 500;
-  font-size: 24px;
-}
 /* End: How We Started  */
 
-/* Start Success stories  */
+/* Start: MVC */
 
-.stories {
-  text-align: center;
-  height: 400px;
-  width: 100%;
-  padding-top: 10%;
-  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
-}
-
-.col-stories {
+.col-mvc {
   flex: 1;
   flex-basis: 22%;
   text-align: center;
@@ -131,26 +119,6 @@ body {
   border: solid 1px var(--secondary);
 }
 
-.story-title {
-  margin: 2% 2%;
-  justify-content: center;
-}
-
-.Success {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  color: var(--light);
-  font-weight: 500;
-  text-align: center;
-}
-
-.Guide {
-  font-family: "lato", sans-serif;
-  font-size: 24px;
-  color: var(--light);
-  font-weight: 300;
-  text-align: center;
-}
 
 .mvc-container {
   display: flex;
@@ -167,7 +135,7 @@ body {
   position: relative;
 }
 
-.card-features {
+.mvc-features {
   position: relative;
   height: 300px;
   border-radius: 10px;
@@ -180,43 +148,37 @@ body {
 
 }
 
-.featured-student {
-  height: 35vh;
-  width: 100%;
-  position: relative;
-  border-radius: 80%;
-  border: solid 2px var(--secondary);
-  clip-path: circle(200px at center);
+.mvc-name {
+  color: var(--secondary);
+  font-family: 'Lato', sans-serif;';
+  font-weight: 500;
+  font-size: 24px;
 }
 
-.student-name {
-  font-family: "lato", sans-serif;
-}
-
-.Student-content {
+.mvc-content {
   font-size: 16px;
   color: var(--light);
   font-family: "Rubik";
 }
 
 @media only screen and (max-width: 992px) {
-  .col-stories {
+  .mvc-stories {
     flex-basis: 100%;
     margin: 10px 0;
   }
 
-  .card-features {
+  .mvc-features {
     height: auto;
     margin: 10px 0;
   }
 }
 
-/* End Success stories  */
+/* End: mvc  */
 
-/* Start Testimonials  */
+/* Start: Why Choose  */
 
 #testimonials {
-  background-image: linear-gradient(
+  background linear-gradient(
     rgba(13, 117, 202, 0.5),
     var(--primary) 40%
   );
@@ -225,7 +187,6 @@ body {
   text-align: center;
   position: relative;
 }
-
 
 .testimonial-title {
   color: var(--light);
@@ -264,7 +225,7 @@ body {
 }
 
 .wrapper .row section {
-  background: #fff;
+  background: var(--light);
   border-radius: 5px;
   width: calc(50% - 40px);
   padding: 20px;
@@ -276,7 +237,7 @@ body {
   content: "";
   height: 15px;
   width: 15px;
-  background: #fff;
+  background: var(--secondary);
   top: 28px;
   z-index: -1;
   transform: rotate(45deg);
@@ -334,19 +295,7 @@ body {
   font-weight: 600;
 }
 
-.bottom {
-  font-family: "latoregular", sans-serif;
-  font-weight: 500;
-}
 
-.row section p {
-  margin: 10px 0 17px 0;
-  font-family: "latoregular", sans-serif;
-}
-
-.row section .bottom a:hover {
-  transform: scale(0.97);
-}
 
 .testi-img {
   width: 200px;
@@ -389,6 +338,9 @@ body {
     margin: 10px 0;
   }
 }
+
+
+
 
 /* Partnered NGo's  */
 .partners {
@@ -490,96 +442,3 @@ body {
   float: right;
 }
 
-/* Footer */
-.footer-clean {
-  padding: 50px 0;
-  background-color: #fff;
-  color: #4b4c4d;
-}
-
-.footer-clean h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.footer-clean ul {
-  padding: 0;
-  list-style: none;
-  line-height: 1.6;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.footer-clean ul a {
-  color: var(--primary);
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer-clean ul a:hover {
-  opacity: 1;
-}
-
-.footer-clean .item.social {
-  text-align: right;
-  color: var(--primary);
-}
-
-.social{
-  color: var(--primary);
-}
-
-@media (max-width: 767px) {
-  .footer-clean .item {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-clean .item.social {
-    text-align: center;
-  }
-}
-
-.footer-clean .item.social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin-left: 10px;
-  margin-top: 22px;
-  color: inherit;
-  opacity: 0.75;
-}
-
-.footer-clean .item.social > a:hover {
-  opacity: 0.9;
-}
-
-@media (max-width: 991px) {
-  .footer-clean .item.social > a {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-clean .item.social > a {
-    margin-top: 10px;
-  }
-}
-
-.footer-clean .copyright {
-  margin-top: 14px;
-  margin-bottom: 0;
-  font-size: 13px;
-  opacity: 0.6;
-}
-
-/* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
