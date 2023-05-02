@@ -334,7 +334,7 @@ body {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: var(--secondary);
+  background-color: var(--primary);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -543,7 +543,8 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, var(--secondary), #ac9309);
+  background: linear-gradient(to bottom, var(--primary), var (var(--primary)));
+  border: solid 2px var(--secondary);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -558,6 +559,7 @@ textarea.input {
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
+  border: solid 2px var(--secondary);
 }
 
 .square {
