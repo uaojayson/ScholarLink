@@ -49,3 +49,13 @@ const slider = document.querySelector(".items");
 			slides[prev].classList.add("prev");
 			slides[next].classList.add("next");
 		}
+
+		// Get the login and signup buttons
+const loginBtn = document.querySelector('.btn-login');
+
+// Add click event listeners to the buttons
+loginBtn.addEventListener('click', () => {
+  // Redirect to the login page
+  window.location.href = 'http://127.0.0.1:5500/login-signup/login.html?login-type=student#';
+});
+

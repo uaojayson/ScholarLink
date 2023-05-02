@@ -23,8 +23,8 @@
 body,
 input {
   font-family: "Urbanist", sans-serif;
-  background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
-    url(assets/background.jpg);
+  background-image: linear-gradient(rgba(33, 150, 243, 0.5), var(--primary) 40%),
+    url(/assets/background.jpg);
   overflow-x: hidden;
 }
 
@@ -200,7 +200,10 @@ select:focus {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, var(--primary) 0%, #04befe 100%);
+  background-image: linear-gradient(
+    rgba(33, 150, 243, 0.5),
+    var(--primary) 40%
+  );
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
