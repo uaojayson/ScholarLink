@@ -138,6 +138,7 @@ body {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--secondary);
 }
 
 .card-item img {
