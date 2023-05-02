@@ -25,12 +25,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
 /* Start: Navigation Bar */
 
 .nav-link:hover {
@@ -89,6 +83,12 @@ body {
 .gallery-section {
   overflow: hidden;
   position: relative;
+}
+
+.container-gallery {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .gallery-section::before {
@@ -242,19 +242,19 @@ h5 {
 
 /* start: Breakpoints */
 @media screen and (max-width: 1400px) {
-  .container {
+  ..container-gallery {
     max-width: 1160px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  ..container-gallery {
     max-width: 940px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .container {
+  ..container-gallery {
     max-width: 720px;
   }
 
@@ -268,7 +268,7 @@ h5 {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  ..container-gallery {
     max-width: 540px;
   }
 
