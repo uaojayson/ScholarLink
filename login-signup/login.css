@@ -96,7 +96,7 @@ select {
 
 select:focus {
   outline: none;
-  border-color: #6d9bf1;
+  border-color: var(--secondary);
   box-shadow: 0 0 0 2px rgba(109, 155, 241, 0.5);
 }
 
@@ -162,8 +162,8 @@ select:focus {
 }
 
 .social-icon:hover {
-  color: #4481eb;
-  border-color: #4481eb;
+  color: var(--primary);
+  border-color: var(--secondary);
 }
 
 .btn,
