@@ -84,7 +84,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--secondary);
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
   cursor: pointer;
