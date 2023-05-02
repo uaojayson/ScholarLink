@@ -74,26 +74,5 @@ loginBtn.addEventListener('click', () => {
 });
 
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // prevent the form from submitting normally
-  // your code to send the form data to PHP
-});
 
-var form = document.getElementById("contact-form");
-var formData = new FormData(form);
-fetch("send-email.php", {
-  method: "POST",
-  body: formData
-})
-.then(function(response) {
-  if (response.ok) {
-    alert("Your message has been sent!");
-    form.reset();
-  } else {
-    alert("There was an error sending your message.");
-  }
-})
-.catch(function(error) {
-  alert("There was a network error.");
-});
 
