@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ScholarLink</title>
+<<<<<<< HEAD
+=======
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+>>>>>>> e50a9076a237cb6cc3f595f245154c7bb95755bb
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,16 +87,18 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#"
-                    >Mission, Vision, Core Values</a
+                  <a class="dropdown-item" href="/About Us/Our_Story-dummy.html"
+                    >Our Story</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Our Story</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">How It Works?</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">The Team</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/About Us/How_It_Works-dummy.html"
+                    >How It Works?</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -122,24 +138,14 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
+                class="nav-link"
+                href="/scholarships/scholarship.html"
                 onclick="setActiveLink(this)"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
-                Scholarship Grants
+                Scholarships
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Privately Funded</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">NGO Funded</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Government Funded</a></li>
-              </ul>
             </li>
 
             <li class="nav-item dropdown">
@@ -154,10 +160,14 @@
                 Support Center
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">FAQs and Contacts</a></li>
+                <li>
+                  <a class="dropdown-item" href="/support/support.html"
+                    >FAQs and Contacts</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item" href="/support/terms-conditions.html"
                     >Terms of Usage and Privacy Policy</a
                   >
                 </li>
@@ -165,11 +175,8 @@
             </li>
           </ul>
 
-          <button class="btn btn-login custom-border" type="submit">
-            Login
-          </button>
-          <button class="btn btn-signup custom-border mx-3" type="submit">
-            Signup
+          <button class="btn btn-login custom-border mx-3" type="submit">
+            Get Started &nbsp; <i class="fas fa-chevron-right"></i>
           </button>
         </div>
       </div>
@@ -177,7 +184,7 @@
 
     <!-- start: Gallery Section -->
     <section class="gallery-section">
-      <div class="container">
+      <div class="container container-gallery">
         <div class="gallery-wrapper">
           <div class="gallery-content">
             <div class="hero-tag">
@@ -626,16 +633,16 @@
             font-family: 'Rubik';
           "
         >
+          <i
+            class="fa1 fa fa-quote-left"
+            aria-hidden="true"
+            style="font-size: 45px; color: #ffb100"
+          ></i>
           Explore our mentor profiles now and start your journey to success!
           <br />
           Connect with our mentors today.
         </h3>
-        <a
-          href="#"
-          class="btn cta-mentor"
-          style="text-align: center; margin-bottom: 5%; font-size: 22px"
-          >Connect Now</a
-        >
+        <a href="#" class="btn cta-featured-mentor">Connect Now</a>
       </div>
     </section>
     <!-- End: Feature Mentor Section -->
@@ -681,7 +688,7 @@
             <div class="col col-stories">
               <div class="Student-Card">
                 <img
-                  src="Charles student success/image1.png"
+                  src="assets/image1.png"
                   class="featured-student img-fluid"
                   alt="Graduates"
                 />
@@ -704,7 +711,7 @@
             <div class="col col-stories">
               <div class="Student-Card">
                 <img
-                  src="Charles student success/image2.png"
+                  src="assets/image2.png"
                   class="featured-student img-fluid"
                   alt="Graduates"
                 />
@@ -747,6 +754,7 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div class="container text-center mentor-footer">
         <h3
           style="
@@ -757,21 +765,114 @@
             font-family: 'Rubik';
           "
         >
+=======
+
+      <div class="container text-center success-footer">
+        <h3>
+          <i
+            class="fa1 fa fa-quote-left"
+            aria-hidden="true"
+            style="font-size: 45px; color: #ffb100"
+          ></i>
+>>>>>>> e50a9076a237cb6cc3f595f245154c7bb95755bb
           Take the first step towards your future with ScholarLink. <br />
           Sign up today and discover a world of opportunities!
         </h3>
-        <a
-          href="#"
-          class="btn cta-mentor"
-          style="text-align: center; margin-bottom: 5%; font-size: 22px"
-          >Sign-Up Now</a
+        <a href="/login-signup/login.html" class="btn cta-success-story"
+          >Get Started Now</a
         >
       </div>
     </section>
     <!-- End: Success STories Section -->
 
+    <section class="testimonials">
+      <h1 class="testi-title">Students' Testimonials</h1>
+      <div class="container testi-container">
+        <div class="card-carousel cardcarousel">
+          <div class="card card-testi" id="1">
+            <div class="pic-container"></div>
+            <p class="testi-content">
+              <i
+                class="fa1 fa fa-quote-left"
+                aria-hidden="true"
+                style="font-size: 35px; color: #ffb100"
+              ></i>
+              Scholarlink helped me find a college mentor who guided me through
+              the stressful application process. Thanks to them, I got accepted
+              into my dream school!
+            </p>
+          </div>
+          <div class="card card-testi" id="2">
+            <div class="pic-container"></div>
+            <p class="testi-content">
+              <i
+                class="fa1 fa fa-quote-left"
+                aria-hidden="true"
+                style="font-size: 35px; color: #ffb100"
+              ></i>
+              I never thought I would be able to afford college, but Scholarlink
+              connected me with scholarship grants that covered all my tuition
+              fees. I'm forever grateful!
+            </p>
+          </div>
+          <div class="card card-testi" id="3">
+            <div class="pic-container"></div>
+            <p class="testi-content">
+              <i
+                class="fa1 fa fa-quote-left"
+                aria-hidden="true"
+                style="font-size: 35px; color: #ffb100"
+              ></i>
+              The academic and career planning services provided by Scholarlink
+              helped me identify my strengths and interests, leading me to
+              pursue a fulfilling career in engineering.
+            </p>
+          </div>
+          <div class="card card-testi" id="4">
+            <div class="pic-container"></div>
+            <p class="testi-content">
+              <i
+                class="fa1 fa fa-quote-left"
+                aria-hidden="true"
+                style="font-size: 35px; color: #ffb100"
+              ></i>
+              The mentorship program at Scholarlink was a game-changer for me.
+              My mentor helped me build my confidence and inspired me to push
+              myself academically.
+            </p>
+          </div>
+          <div class="card card-testi" id="5">
+            <div class="pic-container"></div>
+            <p class="testi-content">
+              <i
+                class="fa1 fa fa-quote-left"
+                aria-hidden="true"
+                style="font-size: 35px; color: #ffb100"
+              ></i>
+              Thanks to Scholarlink's personality development program, I was
+              able to improve my communication skills and network with industry
+              professionals. It opened up a world of opportunities for me!
+            </p>
+          </div>
+        </div>
+        <a href="#" class="visuallyhidden card-controller"
+          >Carousel controller</a
+        >
+      </div>
+      <div class="container text-center success-footer">
+        <h3>
+          Join ScholarLink now and get the support and guidance you need to
+          achieve your dreams.
+        </h3>
+        <a href="/login-signup/login.html" class="btn cta-success-story"
+          >Join Now</a
+        >
+      </div>
+    </section>
+
     <section class="footer-clean">
       <footer>
+<<<<<<< HEAD
           <div class="container">
               <div class="row justify-content-center">
                   <div class="col-sm-4 col-md-3 item">
@@ -802,6 +903,44 @@
                       <p class="copyright">Company Name © 2018</p>
                   </div>
               </div>
+=======
+        <div class="container footer-container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">How It Works?</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Our Affiliates</h3>
+              <ul>
+                <li><a href="#">Affiliate List</a></li>
+                <li><a href="#">Become An Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Scholarships</h3>
+              <ul>
+                <li><a href="./scholarships/ngo.html">NGO Funded</a></li>
+                <li>
+                  <a href="./scholarships/private.html">Privately Funded</a>
+                </li>
+                <li>
+                  <a href="./scholarships/government.html">Government Funded</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"><i class="icon ion-social-twitter"></i></a
+              ><a href="#"><i class="icon ion-social-snapchat"></i></a
+              ><a href="#"><i class="icon ion-social-instagram"></i></a>
+              <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
+            </div>
+>>>>>>> e50a9076a237cb6cc3f595f245154c7bb95755bb
           </div>
       </footer>
     </section>

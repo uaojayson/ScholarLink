@@ -1,0 +1,428 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Center</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--FONTAWESOME ICONS-->
+    <script
+      src="https://kit.fontawesome.com/3ce7f5ba6a.js"
+      crossorigin="anonymous"
+    ></script>
+
+       <!--CSS Links-->
+    <link rel="stylesheet" href="support.css" />
+
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-4" href="http://127.0.0.1:5500/index.html">
+            <img src="support-assets/logo.png" style="height: 60px" alt="owl" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-4" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/index.html"
+                  onclick="setActiveLink(this)"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a class="dropdown-item" href="/About Us/Our_Story-dummy.html">Our Story</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="/About Us/How_It_Works-dummy.html">How It Works?</a></li>
+               
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Mentors
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Find A Mentor</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Become A Mentor</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Affiliates
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Affiliate List</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Become An Affiliate</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a
+                  class="nav-link"
+                  href="/scholarships/scholarship.html"
+                  onclick="setActiveLink(this)"
+                  
+                >
+                  Scholarships
+                </a>
+        
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  onclick="setActiveLink(this)"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Support Center
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/support/support.html">FAQs and Contacts</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/support/terms-conditions.html"
+                      >Terms of Usage and Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+  
+            <button class="btn btn-login custom-border mx-3" type="submit">
+              Get Started &nbsp; <i class="fas fa-chevron-right"></i>
+            </button>
+  
+          </div>
+        </div>
+      </nav>
+
+
+      <section id="faqs">
+
+        <div class="section">
+            <h1>Frequently Asked Questions <i
+                class="fa1 fa fa-quote-right"
+                aria-hidden="true"
+                style="font-size: 36px; color: #ffb100"
+              ></i></h1>
+          
+            <div class="container-1">
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>What is Scholar Link?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Scholar Link is a non-profit organization that connects underprivileged high school students with college mentors who provide academic, career, and personal guidance.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>Who can apply to be a student mentee?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Any high school student who comes from a low-income background and has demonstrated academic potential can apply to be a mentee.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>Who can apply to be a mentor?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Any college student who has completed at least one year of college and has a GPA of 2.0 or higher (or equivalent) can apply to be a mentor.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <h2>How are mentees matched with mentors?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Mentees are matched with mentors based on their academic interests, career aspirations, and personal backgrounds.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <h2>How long does the mentorship program last?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>The mentorship program lasts for one academic year, with the option to extend for an additional year.</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="container-2">
+    
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>What services does Scholar Link provide?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Scholar Link provides academic and career planning, assistance with college applications, scholarship grants, personality development, and more.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>How much does it cost to participate in Scholar Link?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>There is no cost to participate in Scholar Link. The program is completely free for both mentees and mentors.</p>
+                    </div>
+                </div>
+
+
+           
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>How often do mentors and mentees meet?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Mentors and mentees are expected to meet at least once a month, either in person or virtually.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <h2>How does Scholar Link measure the success of the program?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Scholar Link measures the success of the program by tracking the academic progress of mentees, their acceptance rates to college, and their post-graduation outcomes.</p>
+                    </div>
+                </div>
+    
+                <div class="faq">
+                    <div class="question">
+                        <h2>How can I get involved with Scholar Link?</h2>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                    <div class="answer">
+                        <p>You can get involved with Scholar Link by applying to be a mentor, making a donation, or spreading the word about the program to your network.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 style="color: white;   letter-spacing: 2px; font-size: 36px;">Let's Get In Touch</h1>
+        <div class="container contact">
+            <span class="big-circle"></span>
+    
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Visit Us and Contact Us</h3>
+                <p class="text">
+                  "Connect with Us and Let's Achieve Your Dreams Together."
+                </p>
+      
+                <div class="info">
+                  <div class="information">
+                    <img src="support-assets/location.png" class="icon" alt="" />
+                    <p>36th St, Fifth Avenue, Taguig City PH</p>
+                  </div>
+                  <div class="information">
+                    <img src="support-assets/email.png" class="icon" alt="" />
+                    <p>scholarlink@gmail.com</p>
+                  </div>
+                  <div class="information">
+                    <img src="support-assets/phone.png" class="icon" alt="" />
+                    <p>123-456-789</p>
+                  </div>
+                </div>
+      
+                <div class="social-media">
+                  <p>Connect with us :</p>
+                  <div class="social-icons">
+                    <a href="#" class="icons">
+                      <i class="fab fa-facebook-f"></i>
+                    </a >
+                    <a href="#" class="icons">
+                      <i class="fab fa-twitter"></i>
+                    </a >
+                    <a href="#" class="icons">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icons">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form id="contact-form" action="support.php" autocomplete="off">
+                  <h3 class="title">Message Us</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" />
+                    <label for="">Full Name</label>
+                    <span>Full Name</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                  </div>
+                  <input type="submit" value="Send" class="btn btn-contact" />
+                </form>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+
+      <section class="footer-clean">
+        <footer>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 item">
+                <h3>About Us</h3>
+                <ul>
+                
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">How It Works?</a></li>
+              
+                </ul>
+              </div>
+  
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Our Affiliates</h3>
+                <ul>
+                  <li><a href="#">Affiliate List</a></li>
+                  <li><a href="#">Become An Affiliate</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 item">
+                <h3>Scholarships</h3>
+                <ul>
+                
+                  <li><a href="#">NGO Funded</a></li>
+                  <li><a href="private.html">Privately Funded</a></li>
+                  <li><a href="#">Government Funded</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 item social">
+                <a href="#"><i class="icon ion-social-facebook"></i></a
+                ><a href="#"><i class="icon ion-social-twitter"></i></a
+                ><a href="#"><i class="icon ion-social-snapchat"></i></a
+                ><a href="#"><i class="icon ion-social-instagram"></i></a>
+                <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+      
+      
+
+  
+    <script src="support.js"></script>
+
+    
+</body>
+</html>
