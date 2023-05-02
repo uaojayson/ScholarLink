@@ -862,9 +862,3 @@ img {
   top: calc(-10% - 3px);
   left: calc(-10% - 3px);
 }
-
-.footer-clean {
-  background-color: var(--primary);
-  color: var(--light);
-}
-
