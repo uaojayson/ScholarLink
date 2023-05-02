@@ -11,7 +11,7 @@ function setActiveLink(link) {
 
 
 const slider = document.querySelector(".items");
-		const slides = document.querySelectorAll(".item");
+		const slides = document.querySelectorAll(".partner-item");
 		const button = document.querySelectorAll(".button");
 
 		let current = 0;
