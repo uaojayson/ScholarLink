@@ -70,9 +70,10 @@ body {
 .Shared-stories {
   text-align: center;
   width: 100%;
-  padding-top: 9%;
+  padding-top: 5%;
   padding-bottom: 3%;
   background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  margin-top: 5%;
 }
 .Story {
   font-family: "Montserrat", sans-serif;
@@ -82,19 +83,32 @@ body {
   text-align: center;
 }
 
+.story-container{
+  border-radius: 5%;
+}
+
 .bg-story {
   font-family: "lato", sans-serif;
   font-size: 24px;
   color: var(--light);
   font-weight: 300;
   text-align: center;
+  color: var(--secondary);
 }
 .sh-contents {
+  padding-top: 3%;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
-  color: var(--greyt);
+  color: var(--light);
   font-weight: 300;
   text-align: center;
+}
+
+.student-name {
+  color: var(--secondary);
+  font-family: 'Lato', sans-serif;';
+  font-weight: 500;
+  font-size: 24px;
 }
 /* End: How We Started  */
 
@@ -120,6 +134,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   opacity: 0.9;
+  border: solid 1px var(--secondary);
 }
 
 .story-title {
@@ -143,7 +158,7 @@ body {
   text-align: center;
 }
 
-.Students {
+.mvc-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +183,7 @@ body {
   margin-top: 3%;
   margin-left: 1.5%;
   margin-bottom: 5%;
-  margin-right: 30px;
+
 }
 
 .featured-student {
@@ -387,8 +402,9 @@ body {
 
 /* Partnered NGo's  */
 .partners {
+  margin-top: 10%;
   height: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 .FP {
   text-align: center;
@@ -518,6 +534,10 @@ body {
 
 .footer-clean .item.social {
   text-align: right;
+}
+
+.social{
+  color: var(--primary);
 }
 
 @media (max-width: 767px) {
