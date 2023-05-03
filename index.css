@@ -277,6 +277,34 @@ h5 {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  /* styles for very small phones */
+
+  .hero-tag {
+    margin-top: 50%;
+    padding: 2% 2%;
+    background-color: #0b305a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+  }
+
+  .gallery-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+  }
+
+  .cta-mentor,
+  .cta-mentor:hover {
+    font-size: 15px;
+  }
+
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+}
+
 /* End: Breakpoints/ Hero Gallery Section */
 
 /* Start: What We Provide Section */
@@ -728,7 +756,7 @@ img {
   }
 }
 
-/* Start: How It Works  */
+/* Start: Testimonial */
 
 .testimonials {
   text-align: center;
@@ -861,4 +889,720 @@ img {
   position: absolute;
   top: calc(-10% - 3px);
   left: calc(-10% - 3px);
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 375px) {
+  /* styles for very small phones */
+
+  .hero-tag {
+    margin-top: 50%;
+    padding: 2% 2%;
+    background-color: #0b305a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+  }
+
+  .gallery-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+  }
+
+  .cta-mentor,
+  .cta-mentor:hover,
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  #row-milestone {
+    top: 100%;
+  }
+
+  .col {
+    flex-basis: 70%;
+    margin-left: 5%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .counter-box .fa,
+  .fa-solid {
+    font-size: 26px;
+  }
+
+  .mentor {
+    margin-top: 100%;
+    padding-top: 40%;
+  }
+
+  .title-mentor {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .subtitle-mentor {
+    font-size: 16px;
+  }
+
+  .card-feature {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    padding: 40px 50px;
+  }
+
+  .card-feature:hover {
+    height: 750px;
+  }
+
+  .card-feature:hover > .content {
+    transform: translateY(-500px);
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .content h2 {
+    color: #7f9ead;
+    font-family: "lato", sans-serif;
+  }
+
+  .cta-h3 {
+    font-size: 20px;
+  }
+
+  .cta-featured-mentor,
+  .cta-featured-mentor:active,
+  .cta-featured-mentor:visited {
+    margin-bottom: 20%;
+    font-size: 20px;
+  }
+
+  .stories {
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  }
+
+  .col-stories {
+    flex: 1;
+    flex-basis: 22%;
+    text-align: center;
+    color: var(--light);
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: var(--primary);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    opacity: 0.9;
+  }
+
+  .Success {
+    font-size: 26px;
+  }
+
+  .Guide {
+    font-size: 16px;
+  }
+
+  .featured-student {
+    height: 30vh;
+  }
+
+  .Student-content {
+    font-size: 14px;
+    color: var(--light);
+    font-family: "Rubik";
+  }
+
+  .success-h3 {
+    font-size: 20px;
+  }
+
+  .cta-success-story,
+  .cta-success-story:active,
+  .cta-success-story:visited {
+    font-size: 20px;
+  }
+
+  .testi-title {
+    margin-top: 15%;
+  }
+
+  .testi-content {
+    padding: 2% 15%;
+  }
+
+  .cardcarousel .card-testi {
+    max-width: 80%
+    min-width: 250px;
+    
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) { /* styles for iPhone 6/7/8 */ 
+
+  .hero-tag {
+    margin-top: 50%;
+    padding: 2% 2%;
+    background-color: #0b305a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+  }
+
+  .gallery-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+  }
+
+  .cta-mentor,
+  .cta-mentor:hover,
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  #row-milestone {
+    top: 60%;
+  }
+
+  .col {
+    flex-basis: 70%;
+    margin-left: 5%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .counter-box .fa,
+  .fa-solid {
+    font-size: 26px;
+  }
+
+  .mentor {
+    margin-top: 20%;
+    padding-top: 40%;
+  }
+
+  .title-mentor {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .subtitle-mentor {
+    font-size: 16px;
+  }
+
+  .card-feature {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    padding: 40px 50px;
+  }
+
+  .card-feature:hover {
+    height: 750px;
+  }
+
+  .card-feature:hover > .content {
+    transform: translateY(-500px);
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .content h2 {
+    color: #7f9ead;
+    font-family: "lato", sans-serif;
+  }
+
+  .cta-h3 {
+    font-size: 20px;
+  }
+
+  .cta-featured-mentor,
+  .cta-featured-mentor:active,
+  .cta-featured-mentor:visited {
+    margin-bottom: 20%;
+    font-size: 20px;
+  }
+
+  .stories {
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  }
+
+  .col-stories {
+    flex: 1;
+    flex-basis: 22%;
+    text-align: center;
+    color: var(--light);
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: var(--primary);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    opacity: 0.9;
+  }
+
+  .Success {
+    font-size: 26px;
+  }
+
+  .Guide {
+    font-size: 16px;
+  }
+
+  .featured-student {
+    height: 20vh;
+  }
+
+  .Student-content {
+    font-size: 14px;
+    color: var(--light);
+    font-family: "Rubik";
+  }
+
+  .success-h3 {
+    font-size: 20px;
+  }
+
+  .cta-success-story,
+  .cta-success-story:active,
+  .cta-success-story:visited {
+    font-size: 20px;
+  }
+
+  .testi-title {
+    margin-top: 15%;
+  }
+
+  .testi-content {
+    padding: 2% 15%;
+  }
+
+  .cardcarousel .card-testi {
+    max-width: 80%
+    min-width: 250px;
+    
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 575px) { /* styles for larger phones */ 
+
+  .hero-tag {
+    margin-top: 50%;
+    padding: 2% 2%;
+    background-color: #0b305a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+  }
+
+  .gallery-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+  }
+
+  .cta-mentor,
+  .cta-mentor:hover,
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  #row-milestone {
+    top: 60%;
+  }
+
+  .col {
+    flex-basis: 70%;
+    margin-left: 5%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .counter-box .fa,
+  .fa-solid {
+    font-size: 26px;
+  }
+
+  .mentor {
+    margin-top: 20%;
+    padding-top: 40%;
+  }
+
+  .title-mentor {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .subtitle-mentor {
+    font-size: 16px;
+  }
+
+  .card-feature {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    padding: 40px 50px;
+  }
+
+  .card-feature:hover {
+    height: 750px;
+  }
+
+  .card-feature:hover > .content {
+    transform: translateY(-500px);
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .content h2 {
+    color: #7f9ead;
+    font-family: "lato", sans-serif;
+  }
+
+  .cta-h3 {
+    font-size: 20px;
+  }
+
+  .cta-featured-mentor,
+  .cta-featured-mentor:active,
+  .cta-featured-mentor:visited {
+    margin-bottom: 20%;
+    font-size: 20px;
+  }
+
+  .stories {
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  }
+
+  .col-stories {
+    flex: 1;
+    flex-basis: 22%;
+    text-align: center;
+    color: var(--light);
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: var(--primary);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    opacity: 0.9;
+  }
+
+  .Success {
+    font-size: 26px;
+  }
+
+  .Guide {
+    font-size: 16px;
+  }
+
+  .featured-student {
+    height: 30vh;
+  }
+
+  .col-stories{
+   flex-basis: 100%;
+  }
+
+  .Student-content {
+    font-size: 14px;
+    color: var(--light);
+    font-family: "Rubik";
+  }
+
+  .success-h3 {
+    font-size: 20px;
+  }
+
+  .cta-success-story,
+  .cta-success-story:active,
+  .cta-success-story:visited {
+    font-size: 20px;
+  }
+
+  .testi-title {
+    margin-top: 15%;
+  }
+
+  .testi-content {
+    padding: 2% 15%;
+  }
+
+  .cardcarousel .card-testi {
+    max-width: 80%
+    min-width: 250px;
+    
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) { /* styles for large phones and portrait tablets */ 
+
+  .hero-tag {
+    margin-top: 50%;
+    padding: 2% 2%;
+    background-color: #0b305a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+  }
+
+  .gallery-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+  }
+
+  .cta-mentor,
+  .cta-mentor:hover,
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .cta-affiliate,
+  .cta-affiliate:hover {
+    font-size: 15px;
+  }
+
+  .title {
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  .card h3 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  #row-milestone {
+    top: 60%;
+  }
+
+  .col {
+    flex-basis: 70%;
+    margin-left: 5%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .counter-box .fa,
+  .fa-solid {
+    font-size: 26px;
+  }
+
+  .mentor {
+    padding-top: 40%;
+  }
+
+  .title-mentor {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .subtitle-mentor {
+    font-size: 16px;
+  }
+
+
+
+  .stories {
+    text-align: center;
+    width: 100%;
+    padding-top: 20%;
+    background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+  }
+
+  .col-stories {
+    flex: 1;
+    flex-basis: 22%;
+    text-align: center;
+    color: var(--light);
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: var(--primary);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    opacity: 0.9;
+  }
+
+  .Success {
+    font-size: 26px;
+  }
+
+  .Guide {
+    font-size: 16px;
+  }
+
+  .featured-student {
+    height: 35vh;
+  }
+
+  .col-stories{
+   flex-basis: 100%;
+  }
+
+  .Student-content {
+    font-size: 14px;
+    color: var(--light);
+    font-family: "Rubik";
+  }
+
+  .success-h3 {
+    font-size: 20px;
+  }
+
+  .cta-success-story,
+  .cta-success-story:active,
+  .cta-success-story:visited {
+    font-size: 20px;
+  }
+
+  .testi-title {
+    margin-top: 15%;
+  }
+
+  .testi-content {
+    padding: 2% 15%;
+  }
+
+  .cardcarousel .card-testi {
+    max-width: 80%
+    min-width: 250px;
+    
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) { /* styles for landscape tablets and small laptops */ 
+  .featured-student {
+    height: 50vh;
+    
+  }
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) { /* styles for medium laptops and desktops */ 
+  .featured-student {
+    height: 20vh;
+    
+  }
+  .Students{
+    margin-bottom: 10%;
+  }
+  .col-stories{
+    flex-basis: 20%;
+
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) { /* styles for large laptops and desktops */ 
+  .featured-student {
+    height: 20vh;
+    
+  }
+  .Students{
+    margin-bottom: 10%;
+  }
+  .col-stories{
+    flex-basis: 20%;
+
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1919.98px) { /* styles for extra large desktops */ 
+
+  .featured-student {
+    height: 30vh;
+    
+  }
+  .Students{
+    margin-bottom: 10%;
+  }
+  .col-stories{
+    flex-basis: 20%;
+  }
 }
