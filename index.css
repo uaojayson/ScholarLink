@@ -1561,9 +1561,15 @@ img {
     height: 50vh;
     
   }
+  .Students{
+    margin-bottom: 10%;
+  }
+  .col-stories{
+    flex-basis: 100%;
+
+  }
 
 }
-
 
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) { /* styles for medium laptops and desktops */ 
   .featured-student {
@@ -1571,7 +1577,8 @@ img {
     
   }
   .Students{
-    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-bottom: 38%;
   }
   .col-stories{
     flex-basis: 20%;
@@ -1606,3 +1613,5 @@ img {
     flex-basis: 20%;
   }
 }
+
+
