@@ -818,3 +818,41 @@ ul.no-bullets {
   background: var(--btn-hvr);
   border-color: var(--btn-hvr);
 }
+
+
+@media (max-width: 768px) {
+
+  .tc_wrap .tabs_content .tab_body .tab_item h3 {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-family: 'Lato', sans-serif;';
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .tc_wrap .tabs_content .tab_body .tab_item p {
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+  }
+
+  .terms-title{
+    font-size: 18px;
+  }
+
+  .terms-sub{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .terms-footer{
+    font-size: 12px;
+  }
+
+  .tabs_list ul li{
+    font-size: 12px;
+  }
+
+}
+
