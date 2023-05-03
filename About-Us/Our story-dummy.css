@@ -150,7 +150,7 @@ body {
 
 .mvc-name {
   color: var(--secondary);
-  font-family: 'Lato', sans-serif;';
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 24px;
 }
@@ -178,10 +178,11 @@ body {
 /* Start: Why Choose  */
 
 #testimonials {
-  background linear-gradient(
+  background:linear-gradient(
     rgba(13, 117, 202, 0.5),
     var(--primary) 40%
-  );
+  );;
+  
   background-position: center;
   background-size: cover;
   text-align: center;
