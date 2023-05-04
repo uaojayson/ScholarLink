@@ -190,6 +190,17 @@ body {
     width: 100vw;
   }
 }
+
+/* How it works  */
+.Guides{
+  margin-top: 100px;
+}
+
+.Steps{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--light);
+}
 /*Our Team */
 .Team {
   text-align: center;
