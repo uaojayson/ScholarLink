@@ -351,7 +351,7 @@ body {
 .partners {
   margin-top: 10%;
   height: 400px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .FP {
   margin-top: 10%;
@@ -449,6 +449,10 @@ body {
 }
 
 /* CTA */
+
+.ourstory-footer {
+  color: var(--light);
+}
 
 .cta-ourstory {
   margin-bottom: 5%;
