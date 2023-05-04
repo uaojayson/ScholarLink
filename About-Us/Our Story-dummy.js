@@ -12,7 +12,7 @@ function setActiveLink(link) {
 
 // Carousel
 	const slider = document.querySelector(".items");
-	const slides = document.querySelectorAll(".item");
+	const slides = document.querySelectorAll(".partner-logo");
 	const button = document.querySelectorAll(".button");
 
 	let current = 0;
