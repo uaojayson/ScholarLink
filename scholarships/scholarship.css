@@ -181,20 +181,28 @@ body {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.btn-cta,
-.btn-cta:hover {
-  text-decoration: none;
-  background: #ffb100;
-  color: #0a2647;
-  padding: 5px 8px;
-  border-radius: 3px;
+
+.btn-cta {
+  margin-bottom: 3%;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
   font-size: 22px;
-  outline: none;
-  margin: 0;
-  padding: 8px 10px;
-  cursor: pointer;
-  transition: all 0.5s ease;
+  background-color: var(--primary);
+  color: white;
+  border: solid 1px var(--secondary);
+  text-decoration: none;
+  padding: 5% 10%;
+  border-radius: 2%;
 }
+
+.btn-cta:hover {
+  border: solid 1px var(--light);
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
   #scholarships {
     padding-top: 10%;
