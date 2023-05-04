@@ -1514,6 +1514,10 @@ img {
     font-size: 26px;
   }
 
+  .success-footer{
+    background-color: var(light);
+  }
+
   .Guide {
     font-size: 16px;
   }
