@@ -101,6 +101,14 @@ body {
 
 /* Start: MVC */
 
+.mvc-container {
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
 .col-mvc {
   flex: 1;
   flex-basis: 22%;
@@ -109,25 +117,16 @@ body {
   padding: 10px 40px;
   border-radius: 30px;
   margin: 0 10px;
-  background-color: var(--primary);
+
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   opacity: 0.9;
-  border: solid 1px var(--secondary);
+
   justify-content: center;
   align-items: center;
   position: relative;
   background-image: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5)),
     url(/assets/educ.jpg);
-}
-
-.mvc-container {
-  display: flex;
-
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  position: relative;
 }
 
 .mvc-features {
@@ -145,8 +144,8 @@ body {
 .mvc-name {
   color: var(--secondary);
   font-family: "Lato", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 28px;
 }
 
 .mvc-content {
@@ -177,11 +176,6 @@ body {
   background-size: cover;
   text-align: center;
   position: relative;
-}
-
-::selection {
-  color: #925252;
-  background: #ff7979;
 }
 
 .testimonial-title {
@@ -221,11 +215,13 @@ body {
 }
 
 .wrapper .row section {
-  background: #fff;
+  background: var(--primary);
   border-radius: 5px;
   width: calc(50% - 40px);
   padding: 20px;
   position: relative;
+  box-shadow: 0.3px 0.3px 0.3px 0.3px var(--light);
+  color: var(--light);
 }
 
 .wrapper .row section::before {
