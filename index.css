@@ -1670,3 +1670,7 @@ img {
 }
 /* IMAGE */
 
+.success-h3, .cta-h3, .testi-h3, .featured-on-h3{
+  color: white;
+}
+
