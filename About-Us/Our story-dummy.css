@@ -448,6 +448,7 @@ body {
 
 .ourstory-footer {
   color: var(--light);
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
 }
 
 .cta-ourstory {
@@ -466,4 +467,3 @@ body {
   background-color: var(--primary);
   color: white;
 }
-
