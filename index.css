@@ -1643,6 +1643,8 @@ img {
     justify-content: center;
     margin-top: 3%;
     margin-bottom: 3%;
+    background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
+    padding: 3% 0%;
 }
 .image-container {
   overflow-x: hidden;
