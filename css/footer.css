@@ -1,7 +1,15 @@
+:root {
+  --primary: #0a2647;
+  --secondary: #ffb100;
+  --dark-1: #161819;
+  --dark-2: #252728;
+  --grey: #aaa;
+  --light: #fff;
+}
 .footer-clean {
   padding: 50px 0;
-  background-color: #fff;
-  color: #4b4c4d;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 .footer-clean h3 {
@@ -84,7 +92,3 @@
   opacity: 0.6;
 }
 
-.footer-clean {
-  background-color: var(--light);
-  color: var(primary);
-}
