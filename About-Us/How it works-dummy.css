@@ -192,11 +192,11 @@ body {
 }
 
 /* How it works  */
-.Guides{
+.Guides {
   margin-top: 100px;
 }
 
-.Steps{
+.Steps {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: var(--light);
@@ -206,6 +206,5 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   color: var(--light);
+  background: linear-gradient(var(--primary) 40%, rgba(33, 150, 243, 0.5));
 }
-
-
