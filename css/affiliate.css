@@ -75,12 +75,12 @@ body {
 .content .buttons {
   display: flex;
 }
-.buttons .btn {
+.buttons .btn-aff {
   height: 40px;
   width: 150px;
   margin: 0 5px;
 }
-.buttons .btn button {
+.buttons .btn-aff button {
   height: 80%;
   width: 80%;
   background: var(--secondary);
@@ -92,8 +92,12 @@ body {
   border-radius: 5px;
   transition: all 0.3s;
 }
-.btn button:hover {
+.btn-aff button:hover {
   transform: scale(0.95);
+}
+.aff-btn{
+  background-color: var(--secondary);
+  border-radius: 10px solid var(--secondary);
 }
 .container-aff .icons {
   position: relative;
