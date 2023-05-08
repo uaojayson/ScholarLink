@@ -1,270 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScholarLink</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScholarLink</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="../css/footer.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
-  <link rel="stylesheet" href="../css/footer.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <!--FONTAWESOME ICONS-->
+    <script
+      src="https://kit.fontawesome.com/3ce7f5ba6a.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--FONTAWESOME ICONS-->
-  <script src="https://kit.fontawesome.com/3ce7f5ba6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/About-Us/How it works-dummy.css" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="/About-Us/How it works-dummy.css" />
-  <!-- favicon  -->
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-</head>
-
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand mx-4" href="http://127.0.0.1:5500/index.html">
-        <img src="/assets/logo.png" style="height: 60px" alt="owl" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mx-4" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html"
-              onclick="setActiveLink(this)">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" onclick="setActiveLink(this)" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="/About-Us/Our_Story-dummy.html">Our Story</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="/About-Us/How_It_Works-dummy.html">How It Works?</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" onclick="setActiveLink(this)" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Our Mentors
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Find A Mentor</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Become A Mentor</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" onclick="setActiveLink(this)" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Our Affiliates
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Affiliate List</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Become An Affiliate</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/scholarships/scholarship.html" onclick="setActiveLink(this)">
-              Scholarships
-            </a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" onclick="setActiveLink(this)" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Support Center
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="/support/support.html">FAQs and Contacts</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="/support/terms-conditions.html">Terms of Usage and Privacy Policy</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-
-        <button class="btn btn-login custom-border mx-3" type="submit">
-          Get Started &nbsp; <i class="fas fa-chevron-right"></i>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="http://127.0.0.1:5500/index.html">
+          <img src="/assets/logo.png" style="height: 60px" alt="owl" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse mx-4" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="http://127.0.0.1:5500/index.html"
+                onclick="setActiveLink(this)"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick="setActiveLink(this)"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/About-Us/Our_Story-dummy.html"
+                    >Our Story</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/About-Us/How_It_Works-dummy.html"
+                    >How It Works?</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick="setActiveLink(this)"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Mentors
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Find A Mentor</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/become a mentor/becomeMentor.html"
+                    >Become A Mentor</a
+                  >
+                </li>
+              </ul>
+            </li>
 
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick="setActiveLink(this)"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Affiliates
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/affiliates/affiliates.html"
+                    >Affiliate List</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/affiliates/become-an-affiliate.html"
+                    >Become An Affiliate</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/scholarships/scholarship.html"
+                onclick="setActiveLink(this)"
+              >
+                Scholarships
+              </a>
+            </li>
 
-  <!-- Start: How It Works  -->
-  <section class="Guides">
-    <div class="Steps text-center">
-      <h2>Six-Easy-Steps to Be a part of ScholarLink</h2>
-    </div>
-    <div class="container text-center wrapper my-3">
-      <button class="arrow prev">&lt;</button>
-      <button class="arrow next">&gt;</button>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                onclick="setActiveLink(this)"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Support Center
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/support/support.html"
+                    >FAQs and Contacts</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/support/terms-conditions.html"
+                    >Terms of Usage and Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-      <div class="card-wrapper">
-        <div class="card-item">
-          <img src="about  imgs/step1.png" alt="" />
-          <div class="card-info">
-            <p><a href="#" class="card-title"></a></p>
-
-            <p class="card-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, dicta dolore voluptatibus asperiores molestias
-              consequuntur commodi alias, nobis corrupti delectus atque?
-              Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
-            </p>
-          </div>
-        </div>
-        <div class="card-item">
-          <img src="about  imgs/Step 2.png" alt="" />
-          <div class="card-info">
-            <p>
-              <a href="#" class="card-title"></a>
-            </p>
-
-            <p class="card-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, dicta dolore voluptatibus asperiores molestias
-              consequuntur commodi alias, nobis corrupti delectus atque?
-              Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
-            </p>
-          </div>
-        </div>
-        <div class="card-item">
-          <img src="about  imgs/step3.png" alt="" />
-          <div class="card-info">
-            <p><a href="#" class="card-title"></a></p>
-
-            <p class="card-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, dicta dolore voluptatibus asperiores molestias
-              consequuntur commodi alias, nobis corrupti delectus atque?
-              Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
-            </p>
-          </div>
-        </div>
-        <div class="card-item">
-          <img src="about  imgs/step4.png" alt="" />
-          <div class="card-info">
-            <p><a href="#" class="card-title"></a></p>
-
-            <p class="card-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, dicta dolore voluptatibus asperiores molestias
-              consequuntur commodi alias, nobis corrupti delectus atque?
-              Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
-            </p>
-          </div>
-        </div>
-        <div class="card-item">
-          <img src="about  imgs/step5.png" alt="" />
-          <div class="card-info">
-            <p><a href="#" class="card-title"></a></p>
-
-            <p class="card-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, dicta dolore voluptatibus asperiores molestias
-              consequuntur commodi alias, nobis corrupti delectus atque?
-              Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
-            </p>
-          </div>
-        </div>
-        <div class="card-item">
-          <img src="about  imgs/step6.png" alt="" />
-          <div class="card-info">
-            <p><a href="#" class="card-title"></a></p>
-
-            <p class="card-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, dicta dolore voluptatibus asperiores molestias
-              consequuntur commodi alias, nobis corrupti delectus atque?
-              Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End: How It Works  -->
-
-  <!-- Start: Our Team   -->
-  <section class="A-team">
-    <h1 class="Team">Meet Our Team</h1>
-    <div class="Team_members"></div>
-  </section>
-  <!-- End: Our Team  -->
-  <hr>
-  <!-- Start: Footer   -->
-  <section class="footer-clean">
-    <footer>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-4 col-md-3 item">
-            <h3>About Us</h3>
-            <ul>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">How It Works?</a></li>
-            </ul>
-          </div>
-
-          <div class="col-sm-4 col-md-3 item">
-            <h3>Our Affiliates</h3>
-            <ul>
-              <li><a href="#">Affiliate List</a></li>
-              <li><a href="#">Become An Affiliate</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-4 col-md-3 item">
-            <h3>Scholarships and Grants</h3>
-            <ul>
-              <li><a href="#">Privately Funded</a></li>
-              <li><a href="#">NGO Funded</a></li>
-              <li><a href="#">Government Funded</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 item social">
-            <a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-                class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
-              href="#"><i class="icon ion-social-instagram"></i></a>
-            <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
-          </div>
+          <button class="btn btn-login custom-border mx-3" type="submit">
+            Get Started &nbsp; <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
       </div>
-    </footer>
-  </section>
-  <!-- End: Footer  -->
-  <script src="index.js"></script>
-  <script src="How it works-dummy.js"></script>
-</body>
+    </nav>
 
+    <!-- Start: How It Works  -->
+    <section class="Guides">
+      <div class="Steps text-center">
+        <h2>Six-Easy-Steps to Be a part of ScholarLink</h2>
+      </div>
+      <div class="container text-center wrapper my-3">
+        <button class="arrow prev">&lt;</button>
+        <button class="arrow next">&gt;</button>
+
+        <div class="card-wrapper">
+          <div class="card-item">
+            <img src="about  imgs/step1.png" alt="" />
+            <div class="card-info">
+              <p><a href="#" class="card-title"></a></p>
+
+              <p class="card-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, dicta dolore voluptatibus asperiores molestias
+                consequuntur commodi alias, nobis corrupti delectus atque?
+                Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="about  imgs/Step 2.png" alt="" />
+            <div class="card-info">
+              <p>
+                <a href="#" class="card-title"></a>
+              </p>
+
+              <p class="card-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, dicta dolore voluptatibus asperiores molestias
+                consequuntur commodi alias, nobis corrupti delectus atque?
+                Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="about  imgs/step3.png" alt="" />
+            <div class="card-info">
+              <p><a href="#" class="card-title"></a></p>
+
+              <p class="card-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, dicta dolore voluptatibus asperiores molestias
+                consequuntur commodi alias, nobis corrupti delectus atque?
+                Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="about  imgs/step4.png" alt="" />
+            <div class="card-info">
+              <p><a href="#" class="card-title"></a></p>
+
+              <p class="card-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, dicta dolore voluptatibus asperiores molestias
+                consequuntur commodi alias, nobis corrupti delectus atque?
+                Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="about  imgs/step5.png" alt="" />
+            <div class="card-info">
+              <p><a href="#" class="card-title"></a></p>
+
+              <p class="card-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, dicta dolore voluptatibus asperiores molestias
+                consequuntur commodi alias, nobis corrupti delectus atque?
+                Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
+              </p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="about  imgs/step6.png" alt="" />
+            <div class="card-info">
+              <p><a href="#" class="card-title"></a></p>
+
+              <p class="card-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae, dicta dolore voluptatibus asperiores molestias
+                consequuntur commodi alias, nobis corrupti delectus atque?
+                Culpa, debitis cum ducimus non nam quidem blanditiis suscipit!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: How It Works  -->
+
+    <!-- Start: Our Team   -->
+    <section class="A-team">
+      <h1 class="Team">Meet Our Team</h1>
+      <div class="Team_members"></div>
+    </section>
+    <!-- End: Our Team  -->
+    <hr />
+    <!-- Start: Footer   -->
+    <section class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">How It Works?</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Our Affiliates</h3>
+              <ul>
+                <li><a href="#">Affiliate List</a></li>
+                <li><a href="#">Become An Affiliate</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Scholarships and Grants</h3>
+              <ul>
+                <li><a href="#">Privately Funded</a></li>
+                <li><a href="#">NGO Funded</a></li>
+                <li><a href="#">Government Funded</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"><i class="icon ion-social-twitter"></i></a
+              ><a href="#"><i class="icon ion-social-snapchat"></i></a
+              ><a href="#"><i class="icon ion-social-instagram"></i></a>
+              <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- End: Footer  -->
+    <script src="index.js"></script>
+    <script src="How it works-dummy.js"></script>
+  </body>
 </html>
