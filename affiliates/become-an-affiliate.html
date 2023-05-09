@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
-  
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -22,7 +22,7 @@
 
   <link rel="stylesheet" href="../css/become-affiliate.css">
   <link rel="stylesheet" href="../index.css" />
-  <link rel="stylesheet" href="../css/footer.css"/>
+  <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/navbar.css">
   <!-- favicon  -->
   <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
@@ -131,80 +131,127 @@
   <div class="hero-image">
     <div class="hero-text">
       <h1 style="font-size:50px">Become a scholarship affiliate and help change lives.</h1>
-      <p>And I'm a Photographer</p>
+      <p></p>
       <button>Become An Affiliate</button>
     </div>
   </div>
   <!--------------------------End of Hero Image-------------->
 
-  <!------------------------List of Affiliates--------------->
-
-  <!-- <div class="w3-container w3-teal">
-    <h1>Summer 2015</h1>
-  </div>
-  
-  <div class="w3-row-padding w3-margin-top">
-    <div class="w3-third">
-      <div class="w3-card">
-        <img src="img_5terre.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>5 Terre</h5>
-        </div>
-      </div>
-    </div>
-  
-    <div class="w3-third">
-      <div class="w3-card">
-        <img src="img_monterosso.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>Monterosso</h5>
-        </div>
-      </div>
-    </div>
-  
-    <div class="w3-third">
-      <div class="w3-card">
-        <img src="img_vernazza.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>Vernazza</h5>
-        </div>
-      </div>
+  <div>
+    <div class="why-section">
+      <h2>
+        Why become an Affiliate?
+      </h2>
+      <h4>Becoming a sponsor in a scholarship program can bring various benefits, including:</h4>
+      <p>1. Building a positive brand image: Sponsoring a scholarship program can create a positive brand image for the
+        sponsoring organization. It demonstrates the organization's commitment to education and its support for
+        students' academic pursuits.</p>
+      <p>2. Attracting top talent: Scholarships are a great way to attract top talent to an organization. By sponsoring a
+        scholarship, the organization can identify and support students who excel academically and are likely to become
+        high-performing employees in the future.</p>
+      <p>3. Strengthening community ties: Sponsoring a scholarship program can help an organization build strong ties with
+        the community in which it operates. This can lead to increased brand recognition, customer loyalty, and
+        long-term success.</p>
+      <p>4. Improving diversity and inclusion: Scholarships can be targeted towards underrepresented groups in the student
+        population, such as women, minorities, and students with disabilities. By sponsoring such scholarships,
+        organizations can promote diversity and inclusion in the workplace and society as a whole.</p>
+      <p>5. Giving back to society: Sponsoring a scholarship program is a great way for organizations to give back to
+        society and make a positive impact on the lives of students. By investing in education, organizations can help
+        create a brighter future for the next generation.</p>
     </div>
   </div>
-  
-  <div class="w3-row-padding w3-margin-top">
-    <div class="w3-third">
-      <div class="w3-card">
-        <img src="img_manarola.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>Manarola</h5>
-        </div>
-      </div>
-    </div>
-  
-    <div class="w3-third">
-      <div class="w3-card">
-        <img src="img_corniglia.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>Corniglia</h5>
-        </div>
-      </div>
-    </div>
-  
-    <div class="w3-third">
-      <div class="w3-card">
-        <img src="img_riomaggiore.jpg" style="width:100%">
-        <div class="w3-container">
-          <h5>Riomaggiore</h5>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
+  <!------------------------Affiliates forms--------------->
 
+  <div class="container become-affiliate">
+    <header>
+      <h1 id='title'>Become an Affiliate</h1>
+      <p id='description'>
+        Thank you for taking the time to do register
+      </p>
+    </header>
+    
+      <form id='survey-form'>
+        <div class='form-input'>
+          <label id='name-label'>Name</label>
+          <input type='text' id='name' placeholder='Enter your name' class='form-input-size' required />
+        </div>
+        <div class='form-input'>
+          <label id='email-label'>Email</label>
+          <input type='email' id='email' placeholder='Enter your email' class='form-input-size' required />
+        </div>
+        <div class='form-input'>
+          <label id='mobile-number'>Mobile Number</label>
+          <input type='number' id='mobile-number' placeholder='Enter your mobile number' class='form-input-size'
+            required />
+        </div>
+        <div class='form-input'>
+          <label id='contact-person'>Contact Person</label>
+          <input type='text' id='contact-person' placeholder='Enter Contact Person' class='form-input-size' required />
+        </div>
+        <div class='form-input'>
+          <label id='company-name'>Name Of Company/Foundadtion
+          </label>
+          <input type='text' id='company' placeholder='Company Name' class='form-input-size' />
+        </div>
 
-  
-<!------------------Start Footer------------------------->
+        <div class='form-input'>
+          <p>Position/role in the Company/Foundation</p>
+          <select id='dropdown' class='form-input-size' required>
+            <option disabled selected value>Select current position</option>
+            <option value='Student'>Director</option>
+            <option value='Senior Software Engineer'>Chairman</option>
+            <option value='Junior Software Engineer'>Vice Chairman</option>
+            <option value='Full Stack Web Developer'>Executive Director</option>
+            <option value='Front-end Web Developer'>Front-end Web Developer</option>
+            <option value='Back-end Web Developer'>Financial Officer</option>
+            <option value='Prefer not to say'>Prefer not to answer</option>
+            <option value='Other'>Other</option>
+          </select>
+        </div>
+
+        <div class='form-input'>
+          <p>1. 100% scholarship</p>
+          <input type='radio' name='answer' id='radio-btn' value='Definately' />Definately </br>
+          <input type='radio' name='answer' id='radio-btn' value='Maybe' />Maybe </br>
+          <input type='radio' name='answer' id='radio-btn' value='Not sure' />Not sure </br>
+        </div>
+
+        <div class='form-input'>
+          <p>2. Courses you want to offer
+            <span>(Check all that apply)</span>
+          </p>
+          <label><input type='checkbox' id='check-box' value='Ruby on Rails'>BACHELOR OF SCIENCE ACCOUNTANCY</label>
+          <label><input type='checkbox' id='check-box' value='JavaScript'>BACHELOR OF SCINCE IN BUSINESS ADMINISTRATION
+            BANKING AND FINANCE</label>
+          <label><input type='checkbox' id='check-box' value='React'>BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION
+            MARKETING MANAGEMENT</label>
+          <label><input type='checkbox' id='check-box' value='Python'>BACHELOR OF SCIENCE IN CRIMINOLOGY</label>
+          <label><input type='checkbox' id='check-box' value='Java'>BACHELOR OF SCIENCE IN PSYCHOLOGY</label>
+          <label><input type='checkbox' id='check-box' value='PHP'>BACHELOR OF SCIENCE IN TOURISM MANAGEMENT</label>
+          <label><input type='checkbox' id='check-box' value='Angular'>BACHELOR OF SECONDARY EDUCATION
+            (FILIPINO)</label>
+          <label><input type='checkbox' id='check-box' value='Vue'>BACHELOR OF SECONDARY EDUCATION (FILIPINO)</label>
+          <label><input type='checkbox' id='check-box' value='Swift'>BACHELOR OF SCIENCE IN INFORMATION
+            TECHNOLOGY</label>
+          <label><input type='checkbox' id='check-box' value='HTML'>BACHELOR OF SCIENCE IN AGRIBUSINESS</label>
+          <label><input type='checkbox' id='check-box' value='CSS'>BACHELOR OF SCIENCE IN CIVIL ENGINEERING</label>
+          <label><input type='checkbox' id='check-box' value='Other'>BACHELOR OF SCIENCE IN MECHANICAL
+            ENGINEERING</label>
+        </div>
+
+        <div class='form-input'>
+          <p>Any comments or questions please leave us a message:</p>
+          <textarea type='text' placeholder='Enter your comment here...'></textarea>
+        </div>
+
+        <div class='form-input'>
+          <button type='submit' id='submit'>Submit</button>
+        </div>
+      </form>
+  </div>
+ 
+  <!------------------Start Footer------------------------->
   <hr>
   <section class="footer-clean">
     <footer>
@@ -238,9 +285,12 @@
             </ul>
           </div>
           <div class="col-lg-3 item social">
-            <a href="https://www.facebook.com/profile.php?id=100092034174410"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/LinkScholar"><i
-                class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/gegie-yjuhjejwiwjwjejjkjh-3b1485275/"><i class="icon ion-social-linkedin"></i></a><a
-              href="https://www.instagram.com/scholarlink2023/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092034174410"><i
+                class="icon ion-social-facebook"></i></a><a href="https://twitter.com/LinkScholar"><i
+                class="icon ion-social-twitter"></i></a><a
+              href="https://www.linkedin.com/in/gegie-yjuhjejwiwjwjejjkjh-3b1485275/"><i
+                class="icon ion-social-linkedin"></i></a><a href="https://www.instagram.com/scholarlink2023/"><i
+                class="icon ion-social-instagram"></i></a>
             <p class="copyright">ScholarLink © 2023 All Rights Reserved.</p>
           </div>
         </div>
@@ -250,7 +300,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="index.js"></script>
- 
+
 </body>
 
 </html>

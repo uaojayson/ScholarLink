@@ -18,15 +18,18 @@
 
   <!--FONTAWESOME ICONS-->
   <script src="https://kit.fontawesome.com/3ce7f5ba6a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/datatables.min.css">
 
   <link rel="stylesheet" href="../index.css" />
   <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/navbar.css" />
   <link rel="stylesheet" href="../css/affiliate.css" />
+
   <!-- favicon  -->
   <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="../js/aff-table.js"></script>
   <script>
     const img = document.querySelector("img");
     const icons = document.querySelector(".icons");
@@ -142,7 +145,7 @@
   <div class="hero-image">
     <div class="hero-text">
       <h2 style="font-size: 50px">
-        "Investing in education through a scholarship program is an investment in the future of our society." 
+        "Investing in education through a scholarship program is an investment in the future of our society."
       </h2>
       <p>- Unknown.</p>
       <!-- <button></button> -->
@@ -151,279 +154,400 @@
   <!----------End Of Hero----------------->
   <section class="affiliates">
     <div class="row">
-    <div class="col-lg-3">
-    <div class="container-aff">
+      <div class="col-lg-3">
+        <div class="container-aff">
 
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/abacada foundation.png" alt="" />
-        </a>
-        <div class="title">Abacada Foundation</div>
-        <div class="place">Quezon City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/abacada foundation.png" alt="" />
+            </a>
+            <div class="title">Abacada Foundation</div>
+            <div class="place">Quezon City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-lg-3">
-    <div class="container-aff">
+      <div class="col-lg-3">
+        <div class="container-aff">
 
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/Satera.png" alt="" />
-        </a>
-        <div class="title">Satera STEM Scholarship </div>
-        <div class="place">Quezon City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/Satera.png" alt="" />
+            </a>
+            <div class="title">Satera STEM Scholarship </div>
+            <div class="place">Quezon City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-lg-3">
-    <div class="container-aff">
+      <div class="col-lg-3">
+        <div class="container-aff">
 
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/Lardizabal.png" alt="" />
-        </a>
-        <div class="title">Lardizabal Corp.</div>
-        <div class="place">Quezon City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/Lardizabal.png" alt="" />
+            </a>
+            <div class="title">Lardizabal Corp.</div>
+            <div class="place">Quezon City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-lg-3">
-    <div class="container-aff">
+      <div class="col-lg-3">
+        <div class="container-aff">
 
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/Legatub.png" alt="" />
-        </a>
-        <div class="title">Legatub Foundation,Inc</div>
-        <div class="place">Cebu City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/Legatub.png" alt="" />
+            </a>
+            <div class="title">Legatub Foundation,Inc</div>
+            <div class="place">Cebu City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-lg-3">
-    <div class="container-aff">
+      <div class="col-lg-3">
+        <div class="container-aff">
 
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/Private Learning Logo.png" alt="" />
-        </a>
-        <div class="title">Kaizen Scholarship Program</div>
-        <div class="place">Mandaluyong City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/Private Learning Logo.png" alt="" />
+            </a>
+            <div class="title">Kaizen Scholarship Program</div>
+            <div class="place">Mandaluyong City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-lg-3">
-    <div class="container-aff">
+      <div class="col-lg-3">
+        <div class="container-aff">
 
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/Sebastian2.png" alt="" />
-        </a>
-        <div class="title">Sebastian Charitable Trusts</div>
-        <div class="place">Taguig City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/Sebastian2.png" alt="" />
+            </a>
+            <div class="title">Sebastian Charitable Trusts</div>
+            <div class="place">Taguig City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-lg-3">
-    <div class="container-aff">
-
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/ayawan.png" alt="" />
-        </a>
-        <div class="title">Ayawan Scholarship Foundation</div>
-        <div class="place">Quezon City, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn-aff">
-            <button class="aff-btn">Message</button>
+      <div class="col-lg-3">
+        <div class="container-aff">
+          <div class="wrapper-aff">
+            <a href="#">
+              <img src="../assets/ayawan.png" alt="" />
+            </a>
+            <div class="title">Ayawan Scholarship Foundation</div>
+            <div class="place">Quezon City, Philippines</div>
           </div>
-          <div class="btn-aff">
-            <button class="aff-btn">Following</button>
+          <div class="content">
+            <p>User Interface Designer and <br />front-end developer</p>
+            <div class="buttons">
+              <div class="btn-aff">
+                <button class="aff-btn">Message</button>
+              </div>
+              <div class="btn-aff">
+                <button class="aff-btn">Following</button>
+              </div>
+            </div>
+          </div>
+          <div class="icons">
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
           </div>
         </div>
       </div>
-      <div class="icons">
-        <li>
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-        </li>
-        <li>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-        </li>
-      </div>
-    </div>
-  </div>
 
-    <div class="container-aff">
-      <div class="wrapper">
-        <a href="#">
-          <img src="../assets/Villanueva.png" alt="" />
-        </a>
-        <div class="title">Villanueva Foundation Corp.</div>
-        <div class="place">Cavite, Philippines</div>
-      </div>
-      <div class="content">
-        <p>User Interface Designer and <br />front-end developer</p>
-        <div class="buttons">
-          <div class="btn">
-            <button>Message</button>
-          </div>
-          <div class="btn">
-            <button>Following</button>
+      <div class="container-aff">
+        <div class="wrapper-aff">
+          <a href="#">
+            <img src="../assets/Villanueva.png" alt="" />
+          </a>
+          <div class="title">Villanueva Foundation Corp.</div>
+          <div class="place">Cavite, Philippines</div>
+        </div>
+        <div class="content">
+          <p>User Interface Designer and <br />front-end developer</p>
+          <div class="buttons">
+            <div class="btn">
+              <button>Message</button>
+            </div>
+            <div class="btn">
+              <button>Following</button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- <div class="icons">
+        <!-- <div class="icons">
       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
       <li><a href="#"><span class="fab fa-twitter"></span></a></li>
       <li><a href="#"><span class="fab fa-instagram"></span></a></li>
     </div> -->
+      </div>
     </div>
-  </div>
   </section>
-
+  <center>
+    <section>
+      <div class="col-md-12 col-lg-12" style="color:white">
+        <div class="card">
+          <div class="card-header" style="color:white">STUDENT LEADERBOARD</div>
+          <div class="card-body">
+            <p class="card-title"></p>
+            <table class="table table-hover" id="dataTables-example" width="100%">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Course</th>
+                  <th>University</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Dakota Rice</td>
+                  <td>BACHELOR OF SCIENCE ACCOUNTANCY</td>
+                  <td>United States</td>
+                  <td>Oud-Turnhout</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Minerva Hooper</td>
+                  <td>BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION BANKING AND FINANCE</td>
+                  <td>Curaçao</td>
+                  <td>Sinaai-Waas</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sage Rodriguez</td>
+                  <td>BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION MARKETING MANAGMENT</td>
+                  <td>Netherlands</td>
+                  <td>Baileux</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Philip Chaney</td>
+                  <td>BACHELOR OF SCIENCE IN CRIMINOLOGY</td>
+                  <td>Korea, South</td>
+                  <td>Overland Park</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Doris Greene</td>
+                  <td>BACHELOR OF SCIENCE IN PSYCHOLOGY</td>
+                  <td>Malawi</td>
+                  <td>Feldkirchen in Kärnten</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Mason Porter</td>
+                  <td>BACHELOR OF SCIENCE IN TOURISM MANAGEMENT</td>
+                  <td>Chile</td>
+                  <td>Gloucester</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Allisa Sanches</td>
+                  <td>BACHELOR OF SECONDARY EDUCATION (ENGLISH)</td>
+                  <td>Columbia</td>
+                  <td>Nigger</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Peter Benhams</td>
+                  <td>BACHELOR OF SECONDARY EDUCATION (FILIPINO)</td>
+                  <td>Ecuador</td>
+                  <td>Holster</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Bramson Adams</td>
+                  <td>BACHELOR OF SCIENCE IN CRIMINOLOGY</td>
+                  <td>Philippines</td>
+                  <td>Camp John</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Jessie Williams</td>
+                  <td>BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION BANKING AND FINANCE</td>
+                  <td>Malaysia</td>
+                  <td>Glosterine</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Jessie Williams</td>
+                  <td>BACHELOR OF SCIENCE IN TOURISM MANAGEMENT</td>
+                  <td>Malaysia</td>
+                  <td>Glosterine</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Jessie Williams</td>
+                  <td>BACHELOR OF SCIENCE ACCOUNTANCY</td>
+                  <td>Malaysia</td>
+                  <td>Glosterine</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Jessie Williams</td>
+                  <td>BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION MARKETING MANAGMENT</td>
+                  <td>Malaysia</td>
+                  <td>Glosterine</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Jessie Williams</td>
+                  <td>BACHELOR OF SCIENCE IN PSYCHOLOGY</td>
+                  <td>Malaysia</td>
+                  <td>Glosterine</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </center>
   <!--------------Footer------------------------>
 
   <section class="footer-clean">
@@ -479,6 +603,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="index.js"></script>
+  <script src="../js/datatables.min.js"></script>
+  <script src="../js/initiate-datatables.js"></script>
+
 </body>
 
 </html>
